@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import s from './ThemeSwitcher.module.scss';
+import s from '@components/ThemeSwitcher.module.scss';
 
 const ThemeButton = (
     {

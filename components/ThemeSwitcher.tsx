@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classnames from 'classnames';
 import s from '@components/ThemeSwitcher.module.scss';
 import ThemeButton from '@components/ThemeButton';
+import { get } from '@lib/utils';
 
 const themes = [
     {
@@ -33,6 +34,7 @@ const ThemeSwitcher = () => {
                 themes.map((themeButtonProps) => {
                     return (
                         <ThemeButton
+                            key={get(themeButtonProps, 'id')}
                             setTheme={setTheme}
                             activeTheme={activeTheme}
                             {...themeButtonProps}
