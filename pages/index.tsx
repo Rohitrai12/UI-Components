@@ -11,6 +11,13 @@ const DirectoryPage = () => {
                     </a>
                 </Link>
             </li>
+            <li>
+                <Link href="/custom-slider-range">
+                    <a>
+                        Custom Slider Range
+                    </a>
+                </Link>
+            </li>
         </ul>
     </>
 }
