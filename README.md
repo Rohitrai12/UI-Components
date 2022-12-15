@@ -4,7 +4,7 @@ This is repository with React examples of simple UI components. The repository i
 
 * Clone the repo with
 ```
-git clone git@github.com:atherosai/react-ui-examples.git
+git clone git@github.com:atherosai/ui.git
 ```
 * Install npm packages
 ```
