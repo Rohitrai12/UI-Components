@@ -18,6 +18,13 @@ const DirectoryPage = () => {
                     </a>
                 </Link>
             </li>
+            <li>
+                <Link href="/profile-card">
+                    <a>
+                        Profile Card
+                    </a>
+                </Link>
+            </li>
         </ul>
     </>
 }
