@@ -25,6 +25,13 @@ const DirectoryPage = () => {
                     </a>
                 </Link>
             </li>
+            <li>
+                <Link href="/menu-items-hover">
+                    <a>
+                        Menu Items Hover 
+                    </a>
+                </Link>
+            </li>
         </ul>
     </>
 }
