@@ -32,6 +32,13 @@ const DirectoryPage = () => {
                     </a>
                 </Link>
             </li>
+            <li>
+                <Link href="/card-scroll-snap">
+                    <a>
+                        Card Scroll Snap
+                    </a>
+                </Link>
+            </li>
         </ul>
     </>
 }
