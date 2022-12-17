@@ -17,5 +17,10 @@ npm run dev
 
 Now the app is accessible at ```localhost:3000```
 
+# My Social Media
+The examples are posted here:
 
-
+* [TikTok](https://www.tiktok.com/@davidm_ai)
+* [Instagram](https://www.instagram.com/davidm_ai/)
+* [Youtube](https://www.youtube.com/@Atheroslearning)
+* [Twitter](https://twitter.com/davidm_ml)
