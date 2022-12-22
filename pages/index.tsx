@@ -39,6 +39,20 @@ const DirectoryPage = () => {
                     </a>
                 </Link>
             </li>
+            <li>
+                <Link href="/custom-radio">
+                    <a>
+                        Custom Radio
+                    </a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/custom-loader">
+                    <a>
+                        Pure CSS Loader
+                    </a>
+                </Link>
+            </li>
         </ul>
     </>
 }
