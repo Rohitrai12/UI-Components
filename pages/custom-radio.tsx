@@ -17,7 +17,6 @@ const CustomRadio = () => {
             </div>
         </div>
       </Container>
-    
       <style jsx>
         {`
             .radio-container {
