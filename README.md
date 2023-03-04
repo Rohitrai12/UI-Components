@@ -24,3 +24,4 @@ The examples are posted here:
 * [Instagram](https://www.instagram.com/davidm_ai/)
 * [Youtube](https://www.youtube.com/@Atheroslearning)
 * [Twitter](https://twitter.com/davidm_ml)
+* [Linkedin](https://twitter.com/davidm_ml)
