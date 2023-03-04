@@ -53,6 +53,13 @@ const DirectoryPage = () => {
                     </a>
                 </Link>
             </li>
+            <li>
+                <Link href="/3d-gallery">
+                    <a>
+                        3D Gallery
+                    </a>
+                </Link>
+            </li>
         </ul>
     </>
 }
