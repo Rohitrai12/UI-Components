@@ -5,6 +5,13 @@ const DirectoryPage = () => {
     return <>
         <ul>
             <li>
+                <Link href="/social-buttons">
+                    <a>
+                        Social Buttons
+                    </a>
+                </Link>
+            </li>
+            <li>
                 <Link href="/input-search">
                     <a>
                         Search Input
