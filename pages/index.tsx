@@ -5,6 +5,13 @@ const DirectoryPage = () => {
     return <>
         <ul>
             <li>
+                <Link href="/css-flex-box-responsive">
+                    <a>
+                        Flex Box Responsive
+                    </a>
+                </Link>
+            </li>
+            <li>
                 <Link href="/social-buttons">
                     <a>
                         Social Buttons
