@@ -5,6 +5,13 @@ const DirectoryPage = () => {
     return <>
         <ul>
             <li>
+                <Link href="/zoom-image-hover-effect">
+                    <a>
+                        Zoom Image Hover Effect
+                    </a>
+                </Link>
+            </li>
+            <li>
                 <Link href="/custom-radio">
                     <a>
                         Custom Radios
