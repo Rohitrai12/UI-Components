@@ -89,6 +89,13 @@ const DirectoryPage = () => {
                 </Link>
             </li>
             <li>
+                <Link href="/custom-loader-v1">
+                    <a>
+                        Pure CSS Loader (v1)
+                    </a>
+                </Link>
+            </li>
+            <li>
                 <Link href="/custom-loader">
                     <a>
                         Pure CSS Loader

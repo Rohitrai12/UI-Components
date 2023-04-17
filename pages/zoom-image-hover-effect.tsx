@@ -25,8 +25,7 @@ const zoomPage = () => {
 }`}
                 </style>
         </>
-   ) 
-
+   )
 }
 
 export default zoomPage;
