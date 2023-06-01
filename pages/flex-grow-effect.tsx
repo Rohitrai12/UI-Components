@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@components/Container';
 
 
-const CustomRadio = () => {
+const FlexGrowPage = () => {
     return <>
       <Container>
         <div className="gallery">
@@ -73,4 +73,4 @@ const CustomRadio = () => {
     </>
 }
 
-export default CustomRadio;
+export default FlexGrowPage;
