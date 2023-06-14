@@ -36,26 +36,6 @@
             </span>
         </span>
     </body>
-    <script>
-        const toggleMenu = () => {
-            const burgerMenu = document.querySelector(".menu-icon");
-            const src = burgerMenu.getAttribute('src');
-
-            burgerMenu.setAttribute(
-                'src',
-                src === 'burger-menu.svg' ?
-                    'close.svg'
-                    :
-                    'burger-menu.svg'
-            );
-
-            const navigation = document.querySelector('.navigation');
-
-            navigation.classList.toggle(
-                'navigation--mobile'
-            );
-           
-        };
-    </script>
+    <script src="script.js"></script>
 </html>
 

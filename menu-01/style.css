@@ -110,13 +110,13 @@
   transform-origin: bottom center;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
     .menu-icon {
         display: none;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .navigation {
         display: none;
     }
