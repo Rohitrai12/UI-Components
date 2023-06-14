@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Menu Example</title>
+        <link rel="stylesheet" href="style.css">
+    </header>
+    <body>
+        <span class="background">
+            <span class="menu__wrapper">
+                <span class="menu__bar">
+                    <a
+                        href="#"
+                        title="Logo"
+                    >
+                        <img
+                            class="logo"
+                            src="atheros_learning_logo.png"
+                            title='Logo'
+                            alt='Logo'
+                        />
+                    </a>
+                    <img
+                        class="menu-icon"
+                        src="burger-menu.svg"
+                        title='Burger Menu'
+                        alt='Burger Menu'
+                        onclick="toggleMenu(this)"
+                    />
+                    <menu class="navigation">
+                        <li>Platform</li>
+                        <li>Blog</li>
+                        <li>About</li>
+                        <li>Contact Us</li>
+                    </menu>
+                </span>
+            </span>
+        </span>
+    </body>
+    <script>
+        const toggleMenu = () => {
+            const burgerMenu = document.querySelector(".menu-icon");
+            const src = burgerMenu.getAttribute('src');
+
+            burgerMenu.setAttribute(
+                'src',
+                src === 'burger-menu.svg' ?
+                    'close.svg'
+                    :
+                    'burger-menu.svg'
+            );
+
+            const navigation = document.querySelector('.navigation');
+
+            navigation.classList.toggle(
+                'navigation--mobile'
+            );
+           
+        };
+    </script>
+</html>
+
