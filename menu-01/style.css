@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 :root {
@@ -24,8 +25,8 @@
     background-image: url(universe.jpg);
     /* https://www.freepik.com/free-vector/gradient
        -galaxy-background_14658088.htm optimize in prod*/
-    opacity: 1;
-    z-index: 1;
+    opacity: 0.5;
+    z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,7 +35,7 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    z-index: 2;   
+    z-index: 2;
 }
 
 .menu__bar {
@@ -48,7 +49,6 @@
     gap: 32px;
     background-color: var(--background);
     height: 60px;
-    opacity: 0.9;
 }
 
 .menu-icon {
@@ -70,11 +70,12 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
+    isolation: isolate;
 }
 
 @keyframes fade {
     0% { opacity: 0 }
-    100% { opacity: 0.9 }
+    100% { opacity: 0.6 }
 }
                     
 .navigation > li {
@@ -91,6 +92,8 @@
     color: #FF9950;
 }
 
+
+
 .navigation > li::after {
   content: '';
   position: absolute;
@@ -100,7 +103,7 @@
   bottom: -4px;
   border-radius: 1px;
   left: 0;
-  background: linear-gradient(90deg, var(--background), var(--primary), var(--background));
+  background: linear-gradient(90deg,var(--background), var(--primary), var(--background));
   transform-origin: bottom center;
   transition: transform 0.3s ease-out;
 }
@@ -135,6 +138,6 @@
         gap: 8px;
         flex-direction: column;
         animation: fade 1s ease-in 1 forwards;
-        opacity: 0.9;
+        opacity: 0.6;
     }
 }
