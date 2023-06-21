@@ -1,13 +1,15 @@
+
 <!DOCTYPE html>
 <html>
     <header>
         <title>Cards</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </header>
     <body>
         <div class="background">
-            <div class='container'>
-                <div class="card">
+            <section class='container'>
+                <article class="card">
                     <figure>
                         <img
                             src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-
@@ -18,8 +20,8 @@
                             title="Preview"
                         />
                     </figure>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <figure>
                         <img
                             src="https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-
@@ -30,56 +32,31 @@
                             title="Preview"
                         />
                     </figure>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <figure>
                         <img
-                            src="https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg?w=1800&t=st=1687169672~exp=1687170272~hmac=b66f9b9c1e344cbfe6fe2e5f65e94ebb8d418dad2e2af2b892ad9ac60e9eb79c"
-
+                            src="https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg?w=1800&
+                            t=st=1687169672~exp=1687170272~hmac=b66f9b9c1e344cbfe6fe2e5f65e94ebb8d418dad
+                            2e2af2b892ad9ac60e9eb79c"
                             alt="Preview"
                             title="Preview"
                         />
                     </figure>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <figure>
                         <img
-                            src="https://img.freepik.com/free-photo/pathway-middle-green-leafed-trees-with-sun-shining-through-branches_181624-4539.jpg?w=900&t=st=1687123477~exp=1687124077~hmac=6e8b1735a2cb25be79f248b6a3307a37a15b080dee114565d01704b97d432a80"
+                            src="https://img.freepik.com/free-photo/pathway-middle-green-leafed-trees-with
+                                -sun-shining-through-branches_181624-4539.jpg?w=900&t=st=1687123477~exp=1687124077
+                                ~hmac=6e8b1735a2cb25be79f248b6a3307a37a15b080dee114565d01704b97d432a80"
                             alt="Preview"
                             title="Preview"
                         />
                     </figure>
-                </div>
-            </div>
+                </article>
+            </section>
         </div>
-        <script>
-            const slider = document.querySelector('.container');
-            let isDown = false;
-            let startX;
-            let scrollLeft;
-
-            slider.addEventListener('mousedown', (e) => {
-                isDown = true;
-                slider.classList.add('active');
-                startX = e.pageX - slider.offsetLeft;
-                scrollLeft = slider.scrollLeft;
-            });
-            slider.addEventListener('mouseleave', () => {
-                isDown = false;
-                slider.classList.remove('active');
-            });
-            slider.addEventListener('mouseup', () => {
-                isDown = false;
-                slider.classList.remove('active');
-            });
-            slider.addEventListener('mousemove', (e) => {
-            if(!isDown) return;
-                e.preventDefault();
-                const x = e.pageX - slider.offsetLeft;
-                const walk = (x - startX) * 3;
-                
-                slider.scrollLeft = scrollLeft - walk;
-            });
-        </script>
     </body>
 </html>
+
