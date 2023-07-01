@@ -15,7 +15,6 @@ body {
 	background: white;
   padding: 0px;
   margin: 0px;
-
 }
 
 
@@ -40,7 +39,7 @@ body {
 
 .landing-page-section {
   display: flex;
-  padding: 32px 4px;
+  padding: 32px 8px;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to top, rgba(96, 93, 255, 0.1) 0%, rgba(96, 93, 255, 0) 100%);
