@@ -83,9 +83,11 @@ body {
   min-height: 580px;
   border-radius: 8px;
   padding: 48px 32px;
+  cursor: pointer;
   border: 1px solid var(--primary-blue);
-  background: linear-gradient(0deg, #F7FAFF, #F7FAFF);
+  background: #F7FAFF;
 }
+
 
 .pricing-card--primary {
   background: white;
@@ -108,7 +110,6 @@ body {
 .pricing-card__price > s {
   color: var(--text-color-neutral);
   font-size: 0.875rem;
-  margin-top: 3px;
 }
 
 .pricing-card > h3 {
@@ -136,12 +137,26 @@ body {
   color: var(--primary-blue-violet);
   text-decoration: none;
   letter-spacing: 0.75px;
+  border: 0px solid var(--primary-blue-violet);
 }
 
+.pricing-card > .enroll:hover {
+  border: 1px solid var(--primary-blue-violet);
+  transition: border-width 0.2s linear;
+}
 
 .pricing-card--primary > .enroll {
-  background: linear-gradient(90deg, #5DA8FF -0.38%, #605DFF 49.82%, #AD63F6 100.02%);
+  background: linear-gradient(90deg, #605DFF, #AD63F6 50%, #AD63F6 50%, #605DFF 80%, #5DA8FF 100%);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  transition: background-position 1s;
   color: white;
+}
+
+.pricing-card--primary > .enroll:hover, .enroll:focus {
+  border: none;
+  background-position: 100% 100%;
+  transition: background-position 1s;
 }
 
 .pricing-card > ul {
