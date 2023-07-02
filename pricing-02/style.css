@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 html {
@@ -5,7 +6,6 @@ html {
   font-family: Manrope;
   letter-spacing: 0.75px;
 }
-
 
 * {
   box-sizing: border-box;  
@@ -17,7 +17,6 @@ body {
   margin: 0px;
 }
 
-
 :root {
   --primary-blue: #5DA8FF;
   --primary-blue-violet: #605DFF;
@@ -28,7 +27,11 @@ body {
 }
 
 .gradient-text {
-  background-image: linear-gradient(90.65deg, #605DFF 41.17%, #AD63F6 92.13%);
+  background-image: linear-gradient(
+    90.65deg, 
+    #605DFF 41.17%, 
+    #AD63F6 92.13%
+  );
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -42,9 +45,14 @@ body {
   padding: 32px 8px;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to top, rgba(96, 93, 255, 0.1) 0%, rgba(96, 93, 255, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(96, 93, 255, 0.1) 0%,
+    rgba(96, 93, 255, 0) 100%
+  );
   padding-top: 180px;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .landing-page-section > h2 {
@@ -87,7 +95,6 @@ body {
   border: 1px solid var(--primary-blue);
   background: #F7FAFF;
 }
-
 
 .pricing-card--primary {
   background: white;
@@ -146,7 +153,10 @@ body {
 }
 
 .pricing-card--primary > .enroll {
-  background: linear-gradient(90deg, #605DFF, #AD63F6 50%, #AD63F6 50%, #605DFF 80%, #5DA8FF 100%);
+  background: linear-gradient(
+    90deg, #605DFF, #AD63F6 50%, 
+    #AD63F6 50%, #605DFF 80%, #5DA8FF 100%
+  );
   background-size: 200% 200%;
   background-position: 0% 0%;
   transition: background-position 1s;
