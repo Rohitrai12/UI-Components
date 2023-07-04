@@ -1,3 +1,4 @@
+
 let loginForm = document.querySelector(".my-form");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
@@ -20,3 +21,5 @@ function onChange() {
 
 password.addEventListener('change', onChange);
 confirmPassword.addEventListener('change', onChange);
+
+

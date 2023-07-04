@@ -166,7 +166,7 @@ h1 {
     position: relative;
 }
 
-.text-field input::-webkit-input-placeholder { /* Edge */
+.text-field input::-webkit-input-placeholder {
     color: var(--text-lighter);
 }
 
