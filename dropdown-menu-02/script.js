@@ -5,7 +5,6 @@ const dropdown = document.querySelector('.dropdown__wrapper');
 profile.addEventListener('click', () => {
     dropdown.classList.remove('none');
     dropdown.classList.toggle('hide');
-    dropdown.classList.toggle('dropdown__wrapper--fade-out');
 })
 
 

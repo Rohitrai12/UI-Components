@@ -84,11 +84,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    animation: fadeOutAnimation ease-in-out 0.5s forwards;
+    animation: fadeOutAnimation ease-in-out 0.3s forwards;
 }
 
 .dropdown__wrapper--fade-in {
-    animation: fadeInAnimation ease-in-out 0.5s forwards;
+    animation: fadeInAnimation ease-in-out 0.3s forwards;
 }
 
 .none {
@@ -98,7 +98,7 @@ header {
 .hide {
     opacity: 0;
     visibility: hidden;
-    animation: fadeOutAnimation ease-in-out 0.5s forwards;
+    animation: fadeOutAnimation ease-in-out 0.3s forwards;
 }
 
 
@@ -138,14 +138,14 @@ header {
     margin: 0px;
 }
 
-menu {
+nav > ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     gap: 4px;
 }
 
-menu > li {
+nav > ul > li {
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -155,12 +155,12 @@ menu > li {
     width: 100%;
 }
 
-menu > li > img {
+nav > ul > li > img {
     height: 24px;
     width: 24px;
 }
 
-menu > li:hover {
+nav > ul > li:hover {
     cursor: pointer;
     text-decoration: underline;
 }
