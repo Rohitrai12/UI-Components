@@ -4,10 +4,6 @@
 
 :root {
     --primary: #625BFE;
-    --primary-hover: #625BFE;
-    --text: #0F192D;
-    --text-gray: #5A678C;
-    --gray: #c0bcff;
     --important: #F55E5E;
 }
 
@@ -67,6 +63,20 @@ header {
     position: relative;
 }
 
+.profile {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #f7f7f7;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
 .notification-mark {
     position: absolute;
     display: block;
@@ -76,32 +86,6 @@ header {
     height: 10px;
     border-radius: 50%;
     background-color: var(--important);
-}
-
-.user-name {
-    font-size: 14px;
-    font-weight: 700;
-    text-align: left;
-    color: var(--text);
-}
-
-.profile {
-    display: block;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 3px solid #f7f7f7;
-    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
-}
-
-.profile:hover {
-    transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
-}
-
-.email {
-    color: var(--text-gray);
 }
 
 .notifications-top {
@@ -171,8 +155,6 @@ header {
     animation: fadeOutAnimation ease-in-out 0.5s forwards;
 }
 
-
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -195,3 +177,4 @@ header {
         visibility: hidden;
     }
 }
+
