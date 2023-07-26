@@ -1,3 +1,4 @@
+
 const shareButton = document.querySelector('.share-button');
 const toggleSocials = () => {
     const socialsWrapper = document.querySelector('.socials-wrapper')
@@ -13,3 +14,5 @@ const toggleSocials = () => {
 }
 
 shareButton.addEventListener('click', toggleSocials);
+
+
