@@ -3,8 +3,7 @@
 
 :root {
     --background: #2C2C2C;
-	--active: #00C896;
-	
+	--active: #00C896;	
 }
 
 * {
@@ -57,7 +56,7 @@ body {
 }
 
 .active .share-button, .share-button:hover {
-	background-color: #00C896;
+	background-color: var(--active);
 	transform: scale(1.03);
 }
 
