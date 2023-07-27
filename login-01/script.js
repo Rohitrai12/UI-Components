@@ -9,3 +9,16 @@ loginForm.addEventListener("submit", (e) => {
     console.log('Password:', password.value);
     // process and send to API 
 });
+
+let title = document.getElementById("title");
+let loginButton = document.getElementById("Login_button");
+let createLink = document.getElementById("Create_account");
+let reset = document.getElementById("resetPassword")
+
+createLink.onclick = function() {
+    title.innerHTML = "SignUp";
+    loginButton.value = "Signup";
+    createLink.innerHTML = "Login";
+    confirmPassword.classList.add("show");
+    reset.style.display = "none"
+}
