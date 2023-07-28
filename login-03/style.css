@@ -122,12 +122,11 @@ body {
     left: 20px;
 }
 
-.my-form {
+.my-form__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    position: relative;
-    gap: 16px;
+    align-items: center;
+    gap: 32px;
     max-width: 460px;
     width: 100%;
     padding: 48px 32px;
@@ -135,6 +134,14 @@ body {
     box-shadow: 
         rgba(100, 100, 111, 0.2)
         0px 7px 29px 0px;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 16px;
 }
 
 .login-welcome {
