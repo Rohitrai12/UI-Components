@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Material UI Input</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="centering">
+            <div class="box">
+                <div class="input__wrapper">
+                    <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        placeholder="Your Password"
+                        title="Minimum 6 characters at 
+                                least 1 Alphabet and 1 Number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                        required
+                        class="input__field"
+                        placeholder="Your Password"
+                    >
+                    <label
+                        for="password"
+                        class="input__label"
+                    >
+                        Password
+                    </label>
+                    <img
+                        alt="Eye Icon"
+                        title="Eye Icon"
+                        src="eye.svg"
+                        class="input__icon"
+                    >
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
+
+
