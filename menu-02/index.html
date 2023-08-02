@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
-    <header>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
         <title>Menu Example</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,11 +10,11 @@
             href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
             rel="stylesheet"
         >
-    </header>
+    </head>
     <body>
-        <span class="background">
-            <span class="menu__wrapper">
-                <span class="menu__bar">
+        <div class="background">
+            <div class="menu__wrapper">
+                <div class="menu__bar">
                     <a
                         href="#"
                         title="Logo"
@@ -31,8 +32,8 @@
                         title='Burger Menu'
                         alt='Burger Menu'
                         onclick="toggleMenu(this)"
-                    />
-                    <menu class="navigation">
+                    >
+                    <ul class="navigation">
                         <li>
                             <a
                                href="#services"
@@ -65,11 +66,11 @@
                                 Contact Us
                             </a>
                         </li>
-                    </menu>
-                </span>
-            </span>
-        </span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
 </html>
 
