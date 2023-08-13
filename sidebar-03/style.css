@@ -173,7 +173,7 @@ body.collapsed .expand-btn img {
   align-items: center;
   gap: 18px;
   flex-direction: row;
-  padding: 24px 8px;
+  padding: 24px 2px;
   border-top: 1px solid var(--sidebar-gray-background);
 }
 
