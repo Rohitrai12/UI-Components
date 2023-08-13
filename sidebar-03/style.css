@@ -129,6 +129,7 @@ body.collapsed .expand-btn img {
   color: var(--sidebar-gray-light);
   font-size: 1.25rem;
   display: flex;
+  justify-content: start;
   align-items: center;
   height: 56px;
   text-decoration: none;
@@ -136,8 +137,8 @@ body.collapsed .expand-btn img {
 }
 
 .sidebar-links li a img {
-  height: 32px;
-  width: 32px;
+  height: 34px;
+  width: 34px;
 }
 
 
