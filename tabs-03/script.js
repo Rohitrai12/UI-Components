@@ -85,7 +85,9 @@ const generateTabItems = (elem, tabContent) => {
           >
           ${record.type==='user' && record.status ?
             `<div class="status">
-                <div class="status__inner--${record.status}">
+                <div class="
+                    status__inner 
+                    status__inner--${record.status}">
                 </div>
             </div>`
             : ''
