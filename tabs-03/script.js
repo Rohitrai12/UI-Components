@@ -1,6 +1,6 @@
 
 const allLinks = document.querySelectorAll(".tabs a");
-const allTabs = document.querySelectorAll(".tab-content")
+const allTabs = document.querySelectorAll(".tab-content");
 
 allLinks.forEach((elem) => {
   elem.addEventListener('click', function() {
@@ -130,3 +130,4 @@ activeLink.classList.toggle('active');
 activeTab.classList.toggle('tab-content--active');
 
 generateTabItems(activeLink, activeTab);
+
