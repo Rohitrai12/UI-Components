@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
-
 :root {
   --primary-item: #3B3E40;
   --background-item: #EFEFEF;
@@ -26,7 +24,6 @@ body {
 }
 
 .accordion-container {
-  margin: 0 auto;
   min-width: 330px;
   padding: 16px;
   border-radius: 16px;
@@ -39,13 +36,13 @@ body {
   padding: 12px;
   display: flex;
   cursor: pointer;
-  background: white;
   align-items: center;
   justify-content: start;
   gap: 8px;
   transition: all ease-in-out 0.25s;
   color: var(--item-non-hover);
 }
+
 
 .main-item:hover {
   background-color: var(--background-item);
@@ -76,10 +73,6 @@ body {
 
 .main-item--open svg {
   stroke: var(--primary-item);
-}
-
-.main-item--open:hover svg {
-  color: var(--primary-item);
 }
 
 .accordion-container > ul {
@@ -133,7 +126,6 @@ body {
   width: 100%;
 }
 
-
 .expand-icon {
   width: 24px;
   height: 24px;
@@ -151,7 +143,8 @@ body {
   height: 48px;
 }
 
-.accordion-container > ul > li:last-child > .line-vertical {
+.accordion-container > ul > 
+li:last-child > .line-vertical {
   height: 25px;
   align-self: flex-start;
 }
@@ -162,3 +155,4 @@ body {
   height: 2px;
   min-width: 12px;
 }
+
