@@ -14,7 +14,7 @@
                         src="astronaut.jpg"
                     />
                     <!-- optimize the image in production -->
-                    <h1>LogIn!</h1>
+                    <h1 id="title">LogIn!</h1>
                 </span>
                 <div class="text-field">
                     <label for="email">Email:</label>
@@ -50,14 +50,32 @@
                         src="password.svg"
                     >
                 </div>
-                <input type="submit" class="my-form__button" value="Login" />
+                <div class="text-field" id="confirmPassword">
+                    <label for="password">Confirm Password:</label>
+                    <input
+                        id="password"
+                        type="password"
+                        aria-label="Password"
+                        name="password"
+                        placeholder="Your Password"
+                        title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                        required
+                    >
+                    <img
+                        alt="Password Icon"
+                        title="Password Icon"
+                        src="password.svg"
+                    >
+                </div>
+                <input type="submit" class="my-form__button" value="Login" id="Login_button"/>
                 <div class="my-form__actions">
-                    <div class="my-form__row">
+                    <div class="my-form__row" id="resetPassword">
                         <span>Did you forget your password?</span>
                         <a href="#" title="Reset Password">Reset Password</a>
                     </div>
                     <div class="my-form__signup">
-                        <a href="#" title="Create Account">Create Account</a>
+                        <a href="#" title="Create Account" id="Create_account">Create Account</a>
                     </div>
                 </div>
             </form>
