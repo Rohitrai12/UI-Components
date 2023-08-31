@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <title>Login Example</title>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login 01</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+            rel="stylesheet"
+        >
         <link rel="stylesheet" href="style.css">
-    </header>
+    </head>
     <body>
-        <span class="background"></span>
-        <span class="centering">
+        <div class="background"></div>
+        <div class="centering">
             <form class="my-form">
-                <span class="login-welcome-row">
+                <div class="login-welcome-row">
                     <img
                         class="login-welcome"
                         src="astronaut.jpg"
-                    />
+                        alt="Astronaut"
+                    >
                     <!-- optimize the image in production -->
                     <h1>LogIn!</h1>
-                </span>
+                </div>
                 <div class="text-field">
                     <label for="email">Email:</label>
                     <input
@@ -50,7 +59,7 @@
                         src="password.svg"
                     >
                 </div>
-                <input type="submit" class="my-form__button" value="Login" />
+                <input type="submit" class="my-form__button" value="Login" >
                 <div class="my-form__actions">
                     <div class="my-form__row">
                         <span>Did you forget your password?</span>
@@ -61,7 +70,7 @@
                     </div>
                 </div>
             </form>
-        </span>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>

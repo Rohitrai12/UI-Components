@@ -4,8 +4,6 @@
 //? https://css-tricks.com/how-to-animate-the-
 //? details-element-using-waapi/
 
-
-
 class Accordion {
     constructor(el) {
       this.el = el;

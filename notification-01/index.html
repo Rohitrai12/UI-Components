@@ -1,20 +1,24 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>
-            Snackbar
-        </title>
+        <meta charset="UTF-8">
+        <title>Snackbar</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        >
     </head>
     <body>
         <button class="trigger-button" onclick="toggleNotification()">
             Toggle Snackbar
         </button>
-        </button>
         <figure class="notification hide none">
             <div class="notification__body">
-                <span class="notification__body__first">
+                <div class="notification__body__first">
                     <svg focusable="false" viewBox="0 0 24 24">
                         <path d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,
                                  8 0 0,1 12,4C12.76,4 13.5,4.11 14.2, 
@@ -27,7 +31,7 @@
                     <p>
                         Your account has been created! &#128640;
                     </p>
-                </span>
+                </div>
                 <svg
                     onclick="toggleNotification()"
                     xmlns="http://www.w3.org/2000/svg"
