@@ -76,7 +76,7 @@ const generateTabItems = (elem, tabContent) => {
     .filter(filterFunction)
     .map(
       (record) => {
-      return `<div class="record">
+      return DOMPurify.sanitize(`<div class="record">
         <div class="avatar__wrapper">
           <img
              src="${record.src}"
@@ -101,7 +101,7 @@ const generateTabItems = (elem, tabContent) => {
             ${record.description}
           </div> 
         </div>
-      </div>`;
+      </div>`);
   });
 
   tabContent.innerHTML = mappedRecords.join('');
