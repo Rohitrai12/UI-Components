@@ -82,7 +82,7 @@ let comments = [
 
 const authedUser = document.querySelector('.authed-user');
 
-const authorHTML = `<img class="avatar" src="${loggedUser.src}" alt="${loggedUser.name}">`;
+const authorHTML = DOMPurify.sanitize(`<img class="avatar" src="${loggedUser.src}" alt="${loggedUser.name}">`);
 
 authedUser.innerHTML = authorHTML;
 
