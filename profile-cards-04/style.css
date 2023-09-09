@@ -1,6 +1,7 @@
 
 
 
+
 :root {
     --background: #D8E3FA;
     --gray: #EAEAEC;
@@ -26,7 +27,7 @@ body {
 .card {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 20px 20px 16px 16px;
+    border-radius: 24px;
     background-color: white;
     cursor: pointer;
     overflow: hidden;
@@ -36,7 +37,8 @@ body {
 }
 
 .card:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 
+        0px 5px 15px;
 }
 
 .background {
@@ -58,13 +60,19 @@ body {
 }
 
 .content > h2 {
-    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-size: clamp(
+        1.3rem, 2.5vw, 
+        1.8rem);
     font-weight: 700;
-    margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
+    margin-bottom: clamp(
+        0.35rem, 2vw, 
+        0.55rem
+    );
 }
 
 .content > p {
-    font-size: clamp(1rem, 1.75vw, 1.1rem);
+    font-size: clamp(1rem, 
+        1.75vw, 1.1rem);
     font-weight: 400;
     margin: 6px 0;
 }
@@ -75,13 +83,14 @@ body {
 
 .chips {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
+    list-style-type: none;
     padding: 12px 0px 16px 0px;
 }
 
 .chip {
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 10px;
     font-size: 15px;
     background-color: var(--gray);
@@ -90,21 +99,24 @@ body {
 }
 
 .chip:hover {
-    background-color: var(--primary-violet);
+    background-color: var(
+        --primary-violet);
     color: var(--gray)
 }
 
 .action-buttons {
-    border-top: 1px solid var(--gray);
+    border-top: 1px solid var(
+        --gray);
     padding-top: 16px;
-    gap: 8px;
+    gap: 12px;
     display: flex;
     margin-top: auto;
     flex-wrap: wrap;
 }
 
 .action-buttons a {
-    background-color: var(--primary);
+    background-color: var(
+        --primary);
     color: white;
     padding: 12px;
     text-decoration: none;
@@ -127,6 +139,8 @@ body {
 .action-buttons a.secondary {
     background-color: inherit;
     color: var(--primary);
-    border: 1px solid var(--primary);
+    border: 1px solid var(
+        --primary);
     flex: 1 0 80px;
 }
+
