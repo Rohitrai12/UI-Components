@@ -8,12 +8,12 @@
     --gray-dark: #3e3e3e;
     --gray-hover: #F7F7F7;
     --primary-blue: #00E0FE;
-    --blue-gray: #f4fcff;
+    --blue-gray: #BBCFD5;
 }
 
 body {
     font-family: 'Red Hat Display';
-    background-color: var(--blue-gray);
+    background-color: var(--gray);
     display: flex;
     justify-content: center;
     align-items: center;
