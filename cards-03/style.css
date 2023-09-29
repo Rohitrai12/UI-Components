@@ -1,3 +1,5 @@
+
+
 :root {
     --primary-color: #635bff;
     --secondary: #0a2540;
@@ -7,7 +9,9 @@ body {
     display: flex;
     width: 100%;
     padding-top: 180px;
-    font-family: "sohne-var","Helvetica Neue","Arial",sans-serif;
+    font-family: "sohne-var",
+    "Helvetica Neue","Arial",
+    sans-serif;
 }
 
 * {
@@ -16,27 +20,14 @@ body {
     padding: 0px;
 }
 
-.container-wrapper {
-    padding: 0 18px;
-    margin: 0 auto;
-}
-
-
-.container-wrapper > h1 {
-    position: relative;
-    color: var(--secondary);
-    letter-spacing: 1.29;
-    font-size: 48px;
-    margin-bottom: 36px;
-    max-width: 800px;
-}
 
 .container {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    gap: 24px;
+    max-width: 90%;
+    gap: 16px;
 }
 
 .content {
@@ -50,7 +41,9 @@ body {
     flex-direction: column;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.1), 0px 30px 45px -30px rgba(50,50,93,0.25);
+    box-shadow: 0px 18px 36px -18px 
+    rgba(0,0,0,0.1),
+    0px 30px 45px -30px rgba(50,50,93,0.25);
     background-color: white;
     cursor: pointer;
     width: 100%;
@@ -64,7 +57,6 @@ body {
     font-size: 32px;
     margin-bottom: 16px;
     line-height: 1.384615385;
-    font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
 }
 
 .content > p {
@@ -98,6 +90,10 @@ body {
     object-fit: cover;
 }
 
+.card:hover .action-bottom-bar a {
+    opacity: 1;
+}
+
 .action-bottom-bar {
     display: flex;
     font-size: 18px;
@@ -114,10 +110,6 @@ body {
     opacity: 0;
     padding: 0 24px;
     transition: all 0.2s ease-in-out;
-}
-
-.card:hover .action-bottom-bar a {
-    opacity: 1;
 }
 
 .action-bottom-bar a:hover {
