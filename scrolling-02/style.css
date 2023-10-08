@@ -1,0 +1,192 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --accent: #9fe870;
+    --accent-hover: #80e142;
+    --accent-active: #65cf21;
+    --control: #163300;  
+    --secondary: #ECEFEB; 
+    --secondary-hover: #E0E4DE;
+    --secondary-active: #6c6c6b; 
+    --content-primary: #0e0f0c;
+
+}
+
+body {
+    padding: 16px;
+    display: flex;
+    height: 100vh;
+    min-width: 320px;
+    color: var(--content-primary);
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.action-buttons {
+    position: relative;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    scroll-snap-align: start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.flag {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+    height: 48px;
+    min-width: 48px;
+    width: 48px;
+    border: 1px solid var(--secondary-hover);
+}
+
+.action-button {
+    color: #163300;
+    border-radius: 16px;
+    height: 32px;
+    gap: 4px;
+    cursor: pointer;
+    display: flex;
+    padding: 0 12px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--secondary);   
+}
+
+
+.action-button--primary:active {
+    background-color: var(--accent-active);
+}
+
+.action-button:active {
+    background-color: var(--secondary-active);
+}
+
+.action-button--horizontal-scroll {
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    background-color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+    .action-button--horizontal-scroll {
+        display: none;
+    }
+}
+
+.action-button--horizontal-scroll:hover {
+    background-color: var(--accent-hover);
+}
+
+.action-button--horizontal-scroll:active {
+    background-color: var(--accent-active);
+}
+
+.action-button--horizontal-scroll:disabled {
+    cursor: not-allowed;
+    background-color: var(--secondary);
+}
+
+.action-button--horizontal-scroll:disabled:hover {
+    background-color: var(--secondary);
+}
+
+.action-button--horizontal-scroll:disabled:active {
+    background-color: var(--secondary);
+}
+
+#action-button--previous {
+    margin-left: auto;
+    transform: rotate(-90deg);
+}
+
+#action-button--next {
+    transform: rotate(90deg);
+}
+
+.action-button:hover {
+    background-color: var(--secondary-hover);
+}
+
+.action-button--primary {
+    background-color: var(--accent);
+}
+
+.action-button--primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.action-button--primary:active {
+    background-color: var(--accent-active);
+}
+
+#bank-accounts {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0px;
+    width: 100%;
+    flex-direction: row;
+    overflow: auto;
+}
+
+
+.bank-account {
+    appearance: none;
+    text-decoration: none;
+    position: relative;
+    background: var(--secondary);
+    padding: 16px;
+    border-radius: 16px;
+    height: 208px;
+    transition: all 0.2s ease-in-out;
+    width: 208px;
+    display: flex;
+    flex: 0 0 208px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-snap-align: start;
+}
+
+.bank-account h2 {
+    color: var(--content-primary);
+    font-size: 1.375rem;
+    letter-spacing: normal;
+    overflow-wrap: normal;
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+.bank-account .currency {
+    color: var(--content-primary);
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: -.006em;
+    line-height: 133%;
+}
+
+.bank-account:hover {
+    background: var(--secondary-hover);
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    min-width: 300px;
+    margin: 120px auto;
+}
