@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Finance Bank Accounts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="action-buttons">
+                <a href="#" class="action-button action-button--primary">
+                    <!-- svg icon --> Send
+                </a>
+                <a aria-expanded="false" href="#" class="action-button">
+                    <!-- svg icon --> Add Money
+                </a>
+                <a aria-expanded="false" href="#" class="action-button">
+                    <!-- svg icon -->Request
+                </a>
+                <button
+                    id="action-button--previous" class="action-button--horizontal-scroll" type="button" disabled 
+                >
+                    <!-- svg icon -->
+                </button>
+                <button
+                    id="action-button--next" class="action-button--horizontal-scroll" type="button"
+                >
+                    <!-- svg icon -->
+                </button>
+            </div>
+            <div id="bank-accounts">
+                <a href="#uk" class="bank-account">   
+                    <img
+                        class="flag"
+                        aria-hidden="true"
+                        src="assets/uk.png" 
+                        alt="UK"
+                    >
+                    <div>
+                        <h2 role="presentation">
+                           12150.25
+                        </h2>
+                        <div class="currency">
+                            British Pound
+                        </div>
+                    </div>          
+                </a>
+                <!-- more bank accounts -->
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+

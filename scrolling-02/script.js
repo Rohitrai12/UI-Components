@@ -1,5 +1,5 @@
-const bankAccounts = document.getElementById('bank-accounts');
 
+const bankAccounts = document.getElementById('bank-accounts');
 
 let isDown = false;
 let startX;
@@ -37,8 +37,10 @@ document.addEventListener('mousemove', (e) => {
   bankAccounts.scrollTop = scrollTop - walkY;
 });
 
-const scrollLeftButton = document.getElementById('action-button--previous');
-const scrollRightButton = document.getElementById('action-button--next');
+const scrollLeftButton = document.getElementById(
+  'action-button--previous');
+const scrollRightButton = document.getElementById(
+  'action-button--next');
 
 scrollLeftButton.addEventListener('click', () => {
     bankAccounts.scrollBy({
@@ -57,19 +59,20 @@ scrollRightButton.addEventListener('click', () => {
 });
 
 bankAccounts.addEventListener('scroll', (e) => {
-  const position = bankAccounts.scrollLeft;
-  if (position === 0) {
-    scrollLeftButton.disabled = true;
-  } else {
-    scrollLeftButton.disabled = false;
-  }
+    const position = bankAccounts.scrollLeft;
+    if (position === 0) {
+      scrollLeftButton.disabled = true;
+    } else {
+      scrollLeftButton.disabled = false;
+    }
 
-  if (
-    Math.round(position) === 
-    bankAccounts.scrollWidth - bankAccounts.clientWidth
-  ) {
-    scrollRightButton.disabled = true;
-  } else {
-    scrollRightButton.disabled = false;
-  }
+    if (
+      Math.round(position) === 
+      bankAccounts.scrollWidth - 
+      bankAccounts.clientWidth
+    ) {
+      scrollRightButton.disabled = true;
+    } else {
+      scrollRightButton.disabled = false;
+    }
 });
