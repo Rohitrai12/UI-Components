@@ -1,3 +1,5 @@
+
+
 :root {
     --background: #2C2C2C;
 }
@@ -96,7 +98,7 @@ body {
     width: 40px;
     height: 40px;
     border: 1px solid #CDCDCD;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: .2s;
     transform: translateY(32px);
     opacity: 0;
@@ -143,19 +145,18 @@ body {
     bottom: 0;
     left: 0;
     z-index: 4;
-    background: var(--background);
     width: 100%;
-    height: 104px;
-    padding: 16px;
+    height: 106px;
+    padding: 12px 14px;
     z-index: 1;
     color: #333;
+    background-color: #fff;
     text-align: left;
 }
 
 .profile:hover .profile-name {
     background-color: #fff;
 }
-
 
 .profile-name h2 {
     margin-bottom: 8px;
