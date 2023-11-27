@@ -108,7 +108,6 @@ body.collapsed .search__wrapper input::-webkit-input-placeholder {
 
 .sidebar-top-wrapper {
   display: flex;
-  background-color: var(--primary-color-light);
 }
 
 .sidebar-top {
