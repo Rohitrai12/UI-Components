@@ -14,13 +14,13 @@
 body {
     font-size: 16px;
     background: var(--info-side-background);
+    font-family: Mulish, sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Mulish;
 }
 
 .socials-row {
@@ -97,7 +97,8 @@ body {
     justify-content: start;
     align-items: center;
     background: linear-gradient(92.15deg, 
-        #B492FD 30.13%, #ad4ef5 95.43%);
+        var(--violet-light) 30.13%, 
+        var(--info-side-background) 95.43%);
 }
 
 .info-side img {
@@ -233,9 +234,9 @@ body {
     font-weight: 500;
     max-width: 100%;
     width: 100%;
-    border: 1px solid var(--secondary);
     height: 50px;
     letter-spacing: .03rem;
+    border: 1px solid var(--secondary);
     background-color: transparent;
     outline: none;
     transition: .25s;
