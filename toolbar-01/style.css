@@ -35,10 +35,6 @@ button {
 
 button:focus { outline: revert } 
 
-html {
-    scroll-behavior: smooth;
-}
-
 header {
     height: 80px;
     padding: 0 16px;
@@ -105,7 +101,7 @@ header {
     background-color: white;
     gap: 4px;
     animation: fadeOutAnimation ease-in-out 
-        0.5s forwards;
+        0.2s forwards;
     box-shadow: rgba(100, 100, 111, 0.2)
         0px 7px 29px 0px;
 }
@@ -138,7 +134,7 @@ header {
 
 .dropdown__wrapper--fade-in {
     animation: fadeInAnimation ease-in-out
-        0.5s forwards;
+        0.2s forwards;
 }
 
 .none {
@@ -149,7 +145,7 @@ header {
     opacity: 0;
     visibility: hidden;
     animation: fadeOutAnimation ease-in-out
-        0.5s forwards;
+        0.2s forwards;
 }
 
 .app svg {
