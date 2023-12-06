@@ -23,7 +23,6 @@ body {
 .container {
 	padding: 20px;
 	margin: 10px;
-    min-width: 320px;
     max-width: 380px;
     width: 100%;
     min-height: 400px;
