@@ -38,36 +38,7 @@ const tabRecords = [
     description: 'Game / Free / Simulation',
     type: 'games',
   },
-  {
-    src: 'assets/mechinarium.png',
-    name: 'Mechinarium',
-    description: 'Game / Paid / Adventure',
-    type: 'games',
-  },
-  {
-    src: 'assets/code_war.png',
-    name: 'Code of War',
-    description: 'Game / Free / Action',
-    type: 'games',
-  },
-  {
-    src: 'assets/oppenheimer.jpg',
-    name: 'Oppenheimer',
-    description: 'Drama / Thriller',
-    type: 'movies',
-  },
-  {
-    src: 'assets/barbie.png',
-    name: 'Barbie',
-    description: 'Comedy / Drama',
-    type: 'movies',
-  },
-  {
-    src: 'assets/lotr.jpeg',
-    name: 'Lord of the rings: Fellowship of the ring',
-    description: 'Fantasy',
-    type: 'books',
-  },
+// more records
 ];
 
 //? predefined filter functions
@@ -104,7 +75,9 @@ const generateTabItems = (elem, tabContent) => {
               ${record.description}
             </div>
           </div>
-          <a href="#explore-more" class="explore-button" title="Explore">
+          <a href="#explore-more"
+             class="explore-button" 
+             title="Explore">
             Explore
           </a>
         </div>
@@ -113,6 +86,8 @@ const generateTabItems = (elem, tabContent) => {
 
   tabContent.innerHTML = mappedRecords.join('');
 }
+
+
 
 //? handle proper selection for initial load
 const currentHash = window.location.hash;
