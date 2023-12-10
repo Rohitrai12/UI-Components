@@ -1,29 +1,21 @@
 
+
 :root {
-    --background: #2C2C2C;
-    --accent: #FF9950;
+    --background: #1F2336;
+    --accent: #F4BD50;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-}
-
-html {
-    font-family: 'Mulish';
+body {
+    font-family: 'Mulish', sans-serif;
     font-size: 16px;
-}
-
-.background {
     background-color: var(--background);
     display: grid;
     place-items: center;
     height: 100vh;
 }
 
-.button {
-    border: 0px solid;
+.cta-button {
+    box-shadow: 0 0 0 0 var(--accent);
     outline: 2px solid;
     color: white;
     outline-color: white;
@@ -32,8 +24,8 @@ html {
     cursor: pointer;
     font-size: 1rem;
     line-height: 2.5rem;
-    max-width: 160px; 
-    width: 100%; 
+    max-width: 160px;
+    width: 100%;
     letter-spacing: 0.3rem;
     font-weight: 600;
     position: relative;
@@ -42,13 +34,17 @@ html {
     display: flex;
     justify-content: center;
     transition: all 550ms cubic-bezier(
-        .36,.63,.5,.73
+        .36, .63, .5, .73
     );
 }
 
-.button:hover {
-    border: 2px solid var(--accent);
-    outline-color: rgba(255, 255, 255, 0);
+.cta-button:hover {
+    box-shadow: 0 0 0 2px var(
+        --accent
+    );
+    outline-color: rgba(
+        255, 255, 255, 0
+    );
     outline-offset: 15px;
     color: var(--accent);
 }
