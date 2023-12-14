@@ -44,7 +44,8 @@ body {
 }
 
 .input__field {
-  outline: 1.5px solid var(--secondary);
+  outline: 1.5px solid var(
+    --secondary);
   font-size: 1rem;
   border-radius: 8px;
   color: var(--secondary);
@@ -59,7 +60,8 @@ body {
   color: transparent;
 }
 
-.input__field:placeholder-shown~.input__label {
+.input__field:placeholder-shown
+~.input__label {
   font-size: 1rem;
   cursor: text;
   color: var(--secondary);
@@ -71,7 +73,8 @@ label,
   position: absolute;
   top: 6px;
   padding: 0 4px;
-  background-color: var(--box-background);
+  background-color: var(
+    --box-background);
   display: block;
   font-size: 14px;
   left: 8px;
