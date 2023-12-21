@@ -80,12 +80,12 @@ body {
 
 .notification__progress {
     position: absolute;
-    left: 8px;
+    right: 8px;
     bottom: 4px;
     width: calc(100% - 16px);
     height: 3px;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: right;
     background: linear-gradient(
         to right, 
         var(--toast-background),  
