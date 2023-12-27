@@ -1,0 +1,145 @@
+:root {
+    --background: #EDEEF7;
+    --gray: #EDEEF7;
+    --white: #FCFCFC;
+    --green: #4ba61d;
+    --red: #e74c3c;
+    --background-widget: #060D23;
+    --stock-background: #383D4F;
+    --gray-dark: #3e3e3e;
+}
+
+body {
+    font-family: "Red Hat Display",
+        sans-serif;
+    font-size: 16px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stock-watchlist-container {
+    padding: 24px;
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 32px;
+    margin: auto;
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+
+.stock-watchlist-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    color: var(--gray-dark);
+    gap: 4px;
+}
+
+.stock-watchlist-container h2 svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--gray-dark);
+}
+
+
+#stocks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stock-row {
+    position: relative;
+    z-index: 1;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-radius: 24px;
+    font-size: 16px;
+    padding: 16px;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+.stock-row:hover {
+    cursor: grab;
+}
+
+
+
+.stock-avatar {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.stock-name {
+    display: grid;
+    gap: 2px;
+}
+
+.stock-name h3 {
+    font-size: large;
+}
+
+.stock-name p {
+    font-size: smaller;
+}
+
+.stock-chosen {
+    box-shadow: 8px 8px 32px var(--gray);
+}
+
+.stock-drag {
+    opacity: 0;
+}
+
+.stock-info {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.price {
+    color: var(--green);
+    font-weight: 800;
+}
+
+.price--negative {
+    color: var(--red);
+}
+
+.change {
+    padding: 4px 8px;
+    background-color: var(--green);
+    color: var(--white);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-width: 60px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.change--negative {
+    background-color: var(--red);
+}
