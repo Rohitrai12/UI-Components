@@ -1,0 +1,94 @@
+:root {
+  --primary: #03DAC6;
+  --secondary: #f8f8f8;
+  --text: #f8f8f8;
+  --background: #121212;
+  --box-background: #1E1E1E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  background-color: var(--background);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box {
+  background-color: var(--box-background);
+  padding: 24px;
+  padding-top: 12px;
+  border-radius: 16px;
+}
+
+.input__wrapper {
+  position: relative;
+  padding: 15px 0 0;
+}
+
+.input__field {
+  border: 0;
+  border-bottom: 2px solid var(--secondary);
+  outline: 0;
+  font-size: 16px;
+  color: var(--text);
+  padding: 4px 0px;
+  padding-right: 32px;
+
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.input__field::placeholder {
+  color: transparent;
+}
+
+.input__field:placeholder-shown~.input__label {
+  font-size: 16px;
+  cursor: text;
+  color: var(--secondary);
+  top: 20px;
+}
+
+label,
+.input__field:focus~.input__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  font-size: 14px;
+  left: -1px;
+  color: var(--secondary);
+  transition: 0.3s;
+}
+
+.input__field:focus~.input__label {
+  color: var(--primary);
+}
+
+.input__field:focus {
+  border-bottom: 2px solid var(--primary);
+}
+
+.input__icon {
+  position: absolute;
+  right: -14px;
+  bottom: -11px;
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+}
