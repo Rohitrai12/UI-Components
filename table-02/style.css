@@ -1,9 +1,5 @@
-
-/* EBECF0 */
-
-
 :root {
-    --background: #ECECF4;
+    --background: #F8F8FF;
     --table-background: #FCFCFD;
     --primary: #272727;
     --gray: #A0A7B1;
@@ -132,9 +128,10 @@ body {
 }
 
 .stock img {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
+    border-radius: 0.5rem;
 }
 
 .table-widget {
