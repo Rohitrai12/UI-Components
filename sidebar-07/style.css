@@ -52,7 +52,6 @@ body.collapsed .sidebar {
   display: flex;
 }
 
-
 body.collapsed .hide {
   position: absolute;
   visibility: hidden;
@@ -88,7 +87,6 @@ body.collapsed .hide {
 }
 
 /*? sidebar top */
-
 .sidebar-top-wrapper {
   display: flex;
   background-color: var(--primary-color-light);
@@ -280,10 +278,6 @@ body.collapsed .hide {
 
 .logout svg {
   color: var(--logout);
-}
-
-body.collapsed .logout {
-  display: none;
 }
 
 /*? Expand button */
