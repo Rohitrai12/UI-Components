@@ -70,7 +70,6 @@ body.collapsed .hide {
   border-radius: 0.75rem;
   padding-left: 2.75rem;
   font-size: 1.4rem;
-  outline: none;
   border: none;
 }
 
@@ -219,6 +218,10 @@ body.collapsed .hide {
 }
 
 .collapsed .tooltip:hover .tooltip__content {
+  visibility: visible;
+}
+
+.collapsed .tooltip:focus .tooltip__content {
   visibility: visible;
 }
 
