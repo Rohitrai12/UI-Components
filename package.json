@@ -1,0 +1,11 @@
+{
+  "name": "ui",
+  "private": true,
+  "scripts": {
+    "compress": "npx compress-images-with-sharp 80 ./ original",
+    "deploy": "npm run compress && cd react-examples && npm i && npm run build && rm -rf node_modules && cd .. && npm install && node index.mjs && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "fast-glob": "^3.3.2"
+  }
+}
