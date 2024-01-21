@@ -5,6 +5,7 @@ async function start() {
   const HTMLFiles = await glob(["./**/*.html"], {
     ignore: ["./index.html", "**/node_modules/**"],
   });
+  HTMLFiles.sort();
   const result = HTMLFiles.map((filepath) => {
     const arr = filepath.split("/");
     if (arr[0] === "react-examples") {

@@ -2,8 +2,10 @@
   "name": "ui",
   "private": true,
   "scripts": {
-    "compress": "npx compress-images-with-sharp 80 ./ original",
-    "deploy": "npm run compress && cd react-examples && npm i && npm run build && rm -rf node_modules && cd .. && npm install && node index.mjs && rm -rf node_modules"
+    "deploy": "npm run compress:imgs && npm run build && rm -rf node_modules react-examples/node_modules",
+    "build": "npm run build:react-examples && node index.mjs",
+    "build:react-examples": "cd react-examples && npm i && npm run build",
+    "compress:imgs": "npx compress-images-with-sharp 80 ./ original"
   },
   "devDependencies": {
     "fast-glob": "^3.3.2"
