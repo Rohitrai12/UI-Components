@@ -1,35 +1,36 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
-
 :root {
-    --primary: #625BFE;
+    --primary: #3062D4;
+    --primary-hover: #173783;
     --important: #F55E5E;
+    --header-height: 5rem;
+    --bg-white: #f8f8ff;
 }
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    margin: 0px;
+    background: var(--bg-white);
 }
 
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
     position: fixed;
-    height: 80px;
-    padding: 0 16px;
+    height: var(--header-height);
+    background-color: var(--primary);
+    padding: 0 1rem;
     width: 100%;
     display: flex;
+    user-select: none;
     align-items: center;
-    background-color: var(--primary);
     justify-content: end;
 }
 
 .navigation__group {
     display: flex;
-    gap: 16px;
     align-items: center;
 }
 
@@ -38,60 +39,64 @@ header {
     cursor: pointer;
     display: grid;
     place-items: center;
+    border-radius: 50%;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+
+.icon-wrapper button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .icon-wrapper .icon {
-    width: 36px;
-    height: 36px;
+    width: 2rem;
+    height: 2rem;
 }
 
-.icon-wrapper:hover {
-    transform: scale(1.1);
-}
-
-.avatar {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    object-fit: cover;
-}
-
-.avatar-wrapper {
-    position: relative;
+.icon-wrapper:hover, .icon-wrapper:focus {
+    background-color: var(--primary-hover);
 }
 
 .profile {
-    display: block;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 3px solid #f7f7f7;
+    margin-left: 0.5rem;
+    background-color: transparent;
+    border: none;
 }
 
-.profile:hover {
-    transform: scale(1.05);
+.profile img {
+    display: block;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #f7f7f7;
     transition: all 0.2s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
 }
 
 .notification-mark {
     position: absolute;
     display: block;
-    top: -2px;
-    right: -2px;
-    width: 10px;
-    height: 10px;
+    top: 0.45rem;
+    right: 0.45rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border-radius: 50%;
     background-color: var(--important);
 }
 
 .notifications-top {
-    border-bottom: 2px solid #F1F3F6;
-    min-height: 56px;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .notification-item {
@@ -99,40 +104,49 @@ header {
     cursor: pointer;
     flex-direction: row;
     align-items: center;
-    min-height: 64px;
-    gap: 12px;
-    padding: 12px 16px;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    min-height: 6rem;
+    background-color: #FAFBFF;
     border-top: 1px solid #F1F3F6;
-}
-
-.notification-item--recent {
-    background-color: #ecf3ff;
+    transition: all 0.2s ease-in-out;
 }
 
 .notification-item:hover {
-    background-color: #F5F5F7;
+    background-color:  #E5EEFF;
 }
 
-.notification-item--recent:hover {
-    background-color:  #c5dbff;
+.notification-item .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    object-fit: cover;
 }
 
-.notification-item time {
+.notification-item .avatar-wrapper {
+    position: relative;
+}
+
+.notification-item .time {
     color: #7D8491;
     font-size: 0.8rem;
 }
 
 .dropdown__wrapper {
-    max-width: 340px;
+    max-width: 22rem;
     width: 100%;
     top: 88px;
     margin: 0px auto;
     position: absolute;
-    border-radius: 8px;
+    background: var(--bg-white);
+    border-radius: 0.5rem;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    animation: fadeOutAnimation ease-in-out 0.5s forwards;
+    animation: fadeInAnimation ease-in-out 0.5s forwards;
 }
 
 .dropdown__wrapper h2 {
@@ -150,31 +164,24 @@ header {
 }
 
 .hide {
-    opacity: 0;
-    visibility: hidden;
     animation: fadeOutAnimation ease-in-out 0.5s forwards;
 }
 
 @keyframes fadeInAnimation {
     0% {
-        opacity: 0;
-        visibility: hidden;
+        max-height: 0rem;
     }
     100% {
-        opacity: 1;
-        visibility: visible;
+        max-height: 40rem;
     }
 }
 
 @keyframes fadeOutAnimation {
     0% {
-        opacity: 1;
-
-        visibility: visible;
+        max-height: 40rem;
     }
     100% {
-        opacity: 0;
-        visibility: hidden;
+        max-height: 0rem;
     }
 }
 
