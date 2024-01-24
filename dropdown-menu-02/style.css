@@ -1,3 +1,5 @@
+
+
 :root {
     --primary: #3062D4;
     --primary-hover: #173783;
@@ -7,7 +9,8 @@
 }
 
 body {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', 
+    sans-serif;
     background: var(--bg-white);
 }
 
@@ -59,8 +62,11 @@ header {
     height: 2rem;
 }
 
-.icon-wrapper:hover, .icon-wrapper:focus {
-    background-color: var(--primary-hover);
+.icon-wrapper:hover, 
+.icon-wrapper:focus {
+    background-color: var(
+        --primary-hover
+    );
 }
 
 .profile {
@@ -145,8 +151,10 @@ header {
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    animation: fadeInAnimation ease-in-out 0.5s forwards;
+    box-shadow: rgba(99, 99, 99, 0.2) 
+    0px 2px 8px 0px;
+    animation: fadeInAnimation ease-in-out 
+    0.5s forwards;
 }
 
 .dropdown__wrapper h2 {
@@ -156,7 +164,8 @@ header {
 }
 
 .dropdown__wrapper--fade-in {
-    animation: fadeInAnimation ease-in-out 0.5s forwards;
+    animation: fadeInAnimation ease-in-out 
+    0.5s forwards;
 }
 
 .none {
@@ -164,7 +173,8 @@ header {
 }
 
 .hide {
-    animation: fadeOutAnimation ease-in-out 0.5s forwards;
+    animation: fadeOutAnimation ease-in-out
+     0.5s forwards;
 }
 
 @keyframes fadeInAnimation {

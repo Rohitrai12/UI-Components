@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pavilion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <!-- svg upcoming -->
+            <h2>
+                Upcoming events
+            </h2>
+
+            <button type="button" disabled id="action-button--previous" class="action-button--horizontal-scroll">
+                <!-- svg to the left -->
+            </button>
+            <button type="button" id="action-button--next" class="action-button--horizontal-scroll">
+                <!-- svg to the right -->
+            </button>
+        </div>
+        <div id="events">
+            <a href="#the-weeknd" class="event">
+                <div class="event__image">
+                    <img src="...imageurl/weeknd.jpg" alt="The Weeknd">
+                    <div class="event__indicator event__date">
+                        08
+                        <div class="event__date__month">
+                            Feb
+                        </div>
+                    </div>
+                    <div class="event__indicator event__type">
+                        <!-- svg event type -->
+                    </div>
+                </div>
+                <div class="event-description">
+                    <h2>
+                        The Weeknd - After Hours Tour
+                    </h2>
+                    <div class="bottom-stats">
+                        <div class="bottom-stat">
+                            <div class="circle circle--red"></div>
+                            2 new posts
+                        </div>
+                        <div class="bottom-stat">
+                            <div class="circle circle--green"></div>
+                            5 tickets
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
