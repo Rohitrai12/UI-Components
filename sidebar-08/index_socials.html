@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sidebar</title>
+  <!-- inter -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-top-wrapper">
+      <div class="sidebar-top">
+        <a href="#" class="logo__wrapper">
+          <img src="assets/logo.svg" alt="Logo" class="logo-small">
+          <span class="hide company-name">HUGE iCONS</span>
+        </a>
+      </div>
+      <button class="expand-btn" type="button"><!-- expand btn --></button>
+    </div>
+    <div class="sidebar-links-wrapper">
+      <div class="sidebar-links">
+        <ul>
+          <li>
+            <a href="#dashboard" title="Dashboard" class="tooltip">
+              <!-- svg icon --> <span class="link hide">Dashboard</span>
+            </a>
+          </li>
+        </ul>
+        <h2>People</h2>
+        <div class="divider"></div>
+        <ul>
+          <li>
+            <a href="#team" title="Team" class="tooltip">
+              <!-- svg icon -->
+              <span class="link hide">Team</span>
+              <div class="tag hide">New</div>
+            </a>
+          </li>
+          <!-- more items -->
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar__profile">
+      <div class="avatar__wrapper">
+        <img class="avatar" src="assets/logo.svg" alt="Profile Avatar">
+        <div class="online__status"></div>
+      </div>
+      <div class="avatar__name hide">
+        <div class="user-name">Hugeicons Pro</div>
+        <div class="email">@huge_icons</div>
+      </div>
+      <!-- svg -->
+    </div>
+  </nav>
+  <script src="script.js"></script>
+</body>
+
+</html>
