@@ -13,7 +13,7 @@
 body {
     font-family: Poppins;
     height: 100vh;
-    padding: 32px;
+    padding: 2rem;
     display: grid;
     place-items: center;
     background-color: var(--background);
@@ -22,16 +22,16 @@ body {
 .gallery {
     display: flex;
     background-color: var(--background);
-    gap: 16px;
+    gap: 1rem;
 }
 
 .card {
     position: relative;
-    left: 0px;
-    width: 140px;
-    height: 160px;
+    left: 0;
+    width: 9rem;
+    height: 10rem;
     background-color: var(--background);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: 1000ms all;
     transform-origin: center left;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
@@ -40,9 +40,9 @@ body {
 }
 
 .card img {
-    height: 160px;
+    height: 10rem;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .card:hover {
@@ -53,8 +53,8 @@ body {
 .card:hover figcaption {
     font-size: 0.6rem;
     position: absolute;
-    height: 80px;
-    width: 160px;
+    height: 5rem;
+    width: 10rem;
     display: flex;
     align-items: end;
     background: linear-gradient(
@@ -63,15 +63,15 @@ body {
         rgba(0, 0, 0, 0) 100%
     );
     color: white;
-    left: 0px;
-    bottom: 0px;
-    padding-left: 12px;
-    padding-bottom: 10px;
+    left: 0;
+    bottom: 0;
+    padding-left: 0.75rem;
+    padding-bottom: 0.65rem;
 }
 
 .card:hover ~ .card {
     font-weight: bold;
     cursor: pointer;
-    transform: translateX(22px);
+    transform: translateX(1.3rem);
 }
 

@@ -33,7 +33,7 @@ const timeSince = (date) => {
     return Math.floor(seconds) + " seconds ago";
 }
 
-//? In regular app you will fetch these data from api
+//? In regular app you will fetch these dat from api
 
 //? defined commenters
 const users = {
@@ -88,8 +88,10 @@ authedUser.innerHTML = authorHTML;
 
 const commentsWrapper = document.querySelector('.discussion__comments');
 
+//? generate comment HTML based on comment object
 const createComment = (comment) => {
     const newDate = new Date(comment.createdAt);
+    //? sanitize comment HTML
     return DOMPurify.sanitize(`<div class="comment">
         <div class="avatar">
             <img
@@ -126,6 +128,13 @@ commentsWrapper.innerHTML = innerComments;
 
 const newCommentForm = document.getElementById('newcomment__form');
 const newCommentTextarea = document.querySelector('#newcomment__form textarea');
+
+document.getElementById('reset-button').addEventListener(
+    'click', 
+    () => {
+        newCommentForm.reset();
+    }
+);
 
 newCommentForm.addEventListener(
     'submit', 

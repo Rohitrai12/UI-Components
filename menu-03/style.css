@@ -153,9 +153,9 @@ body {
     flex-direction: column;
     gap: 8px;
     list-style-type: none;
-    margin: 0px;
+    margin: 0;
     margin-top: 16px;
-    padding: 0px;
+    padding: 0;
     color: var(--github-button-hover);
 }
 
@@ -185,7 +185,7 @@ body {
     display: flex;
     align-items: center;
     height: 6px;
-    padding: 0px;
+    padding: 0;
 }
 
 .navigation__menu__items > .separator:hover  {
@@ -248,7 +248,7 @@ body {
     0% {
         opacity: 0;
         visibility: hidden;
-        max-width: 0px;
+        max-width: 0;
     }
     100% {
         opacity: 1;
@@ -275,7 +275,7 @@ body {
     }
     100% {
         opacity: 0;
-        max-width: 0px;
+        max-width: 0;
         visibility: hidden;
     }
 }

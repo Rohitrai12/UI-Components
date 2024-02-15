@@ -183,8 +183,8 @@ body.collapsed h2 {
   display: flex;
   column-gap: 8px;
   flex-direction: column;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar-links li {
@@ -322,7 +322,7 @@ body.collapsed .sidebar-links li {
 }
 
 .sidebar__action button {
-  border: 0px;
+  border: 0;
   margin-top: 8px;
   width: 100%;
   cursor: pointer;
@@ -453,7 +453,7 @@ body.collapsed .expand-btn svg {
 
 @keyframes fadeIn {
   from {
-    width: 0px;
+    width: 0;
     opacity: 0;
   }
 

@@ -30,7 +30,7 @@ const cardsHoverEffect = () => {
 
 .card {
     position: relative;
-    left: 0px;
+    left: 0;
     width: 110px;
     height: 150px;
     padding: 8px;

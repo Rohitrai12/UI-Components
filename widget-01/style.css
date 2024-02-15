@@ -52,7 +52,7 @@ body {
     color: var(--white);
     font-size: 1.2rem;
     font-weight: 600;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 8px;
 }
 

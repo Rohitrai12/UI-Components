@@ -64,7 +64,7 @@ body.collapsed .hide {
 body.collapsed .sidebar-top {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 0;
   justify-content: center;
 }
 

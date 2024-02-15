@@ -61,7 +61,7 @@
     flex-direction: row;
     list-style-type: none;
     gap: 24px;
-    padding: 0px;
+    padding: 0;
     background-color: var(--background);
 }
 
@@ -81,7 +81,7 @@
 .navigation > li {
   display: flex;
   position: relative;
-  padding: 0px;
+  padding: 0;
   color: white;
   cursor: pointer;
   width: max-content;

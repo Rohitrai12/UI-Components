@@ -78,10 +78,10 @@ body {
 }
 
 .accordion-container > ul {
-  max-height: 0px;
+  max-height: 0;
   background-color: var(--background);
   list-style-type: none;
-  margin: 0px;
+  margin: 0;
   padding-left: 14px;
   opacity: 0;
   background-color: var(--background-violet-light);

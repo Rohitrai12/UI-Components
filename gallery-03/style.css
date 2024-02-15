@@ -1,6 +1,7 @@
 
 body {
-    margin: 0px;
+    margin: 0;
+    font-size: 16px;
 }
 
 * {
@@ -17,14 +18,14 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
-    perspective: 800px;
+    gap: 1rem;
+    perspective: 40rem;
 }
 
 .card {
     position: relative;
-    width: 120px;
-    height: 160px;
+    width: 7rem;
+    height: 10rem;
     cursor: pointer;
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
@@ -49,7 +50,7 @@ body {
 }
 
 .card__side > img {
-    width: 120px;
-    height: 160px;
+    width: 7rem;
+    height: 10rem;;
     object-fit: cover;
 }

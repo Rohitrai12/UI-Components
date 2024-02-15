@@ -9,8 +9,8 @@
     box-sizing: border-box;  
 }
 
-.background {
-    background-color: var(--background);
+body {
+    background: var(--background);
     display: grid;
     place-items: center;
     height: 100vh;
@@ -25,26 +25,26 @@
 
 .card {
     position: relative;
-    left: 0px;
-    width: 80px;
-    border-radius: 16px;
-    height: 360px;
+    left: 0;
+    width: 5rem;
+    border-radius: 1rem;
+    height: 24rem;
     overflow: hidden;
-    background-color: var(--background);
+    background: var(--background);
     transition: 0.4s ease-in-out;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
     flex: 0.25;
 }
 
 .card img {
-    height: 360px;
+    height: 24rem;
 }
 
 .card:hover {
     flex: 2;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 

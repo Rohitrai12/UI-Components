@@ -57,7 +57,7 @@
     list-style-type: none;
     align-items: center;
     gap: 24px;
-    padding: 0px;
+    padding: 0;
     background-color: var(--background);
 }
 
@@ -139,7 +139,7 @@
     .navigation--mobile {
         top: var(--navbar-height);
         position: absolute;
-        right: 0px;
+        right: 0;
         display: flex;
         padding: 80px 60px;
         min-height: 100%;

@@ -13,8 +13,8 @@ html {
 
 body {
 	background: white;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -59,7 +59,7 @@ body {
   color: var(--text-color);
   text-align: center;
   font-size: 2.5rem;
-  margin: 0px;
+  margin: 0;
 }
 
 .landing-page-section > p {
@@ -120,7 +120,7 @@ body {
 }
 
 .pricing-card > h3 {
-  margin: 0px;
+  margin: 0;
   font-size: 1.125rem;
   font-weight: 700;
   text-align: left;

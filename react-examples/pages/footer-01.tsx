@@ -83,7 +83,7 @@ const footerIsolated = () => {
         flex-direction: column;
         position: absolute;
         width: 100%;
-        bottom: 0px;
+        bottom: 0;
     }
 
     .footer-top-wrapper {
@@ -103,7 +103,7 @@ const footerIsolated = () => {
     h2 {
         text-align: left;
         color: #d2d0e6;
-        margin-top: 0px;
+        margin-top: 0;
         margin-bottom: 16px;
         opacity: 0.7;
         font-size: 16px;

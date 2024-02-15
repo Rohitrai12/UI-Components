@@ -69,7 +69,7 @@ const inputPage = () => {
             .field .label-text {
                 position: absolute;
                 bottom: 5px;
-                left: 0px;
+                left: 0;
                 transition: all 0.2s ease;
             }
               

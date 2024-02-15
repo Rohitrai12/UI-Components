@@ -14,7 +14,7 @@
 
 body {
     font-family: sans-serif;
-    margin: 0px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +179,7 @@ body {
     list-style-type: none;
     display: flex;
     gap: 16px;
-    padding: 0px;
+    padding: 0;
 }
 
 .pagination a {

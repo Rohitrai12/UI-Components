@@ -12,6 +12,7 @@
 body {
     background-color: var(--secondary);
     font-family: Mulish;
+    font-size: 16px;
 }
 
 .background {
@@ -19,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
-    padding: 80px 32px;
+    padding: 2rem;
 }
  
 .articles {
@@ -27,18 +28,18 @@ body {
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    max-width: 1200px;
-    gap: 24px;
+    max-width: 75rem;
+    gap: 1.5rem;
 }
  
 .articles article {
-    max-width: 320px;
+    max-width: 20rem;
     cursor: pointer;
     position: relative;
     display: block;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
 .articles article a {
@@ -49,7 +50,7 @@ body {
 
 
 .articles article h2 {
-    margin: 0 0 18px 0;
+    margin: 0 0 1rem 0;
     font-size: 1.6rem;
     color: var(--secondary);
     transition: color 0.3s ease-out;
@@ -63,13 +64,13 @@ body {
 }
   
 .article-preview {
-    padding: 24px;
+    padding: 1.5rem;
     background: white;
 }
 
 .articles figure {
     width: 100%;
-    height: 200px;
+    height: 13rem;
     overflow: hidden;
 }
 

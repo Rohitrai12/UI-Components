@@ -16,8 +16,8 @@ body {
 
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -158,7 +158,7 @@ header {
 }
 
 .dropdown__wrapper h2 {
-    margin: 0px;
+    margin: 0;
     font-size: 1.25rem;
     color: #192028;
 }
@@ -179,7 +179,7 @@ header {
 
 @keyframes fadeInAnimation {
     0% {
-        max-height: 0rem;
+        max-height: 0;
     }
     100% {
         max-height: 40rem;
@@ -191,7 +191,7 @@ header {
         max-height: 40rem;
     }
     100% {
-        max-height: 0rem;
+        max-height: 0;
     }
 }
 

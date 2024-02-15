@@ -23,19 +23,9 @@ body {
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     background: #fff;
     position: relative;
-}
-
-.swiper-slide h2 {
-    position: absolute;
-    color: white;
-    z-index: 10;
-    left: 50%;
-    top: calc(50% - 36px);
-    font-size: 42px;
-    transform: translate(-50%, -50%);
 }
 
 .swiper-slide img {
@@ -47,8 +37,8 @@ body {
 }
 
 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
+    width: 0.75rem;
+    height: 0.75rem;
     display: inline-block;
     border-radius: 100%;
     background: white;
