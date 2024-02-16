@@ -1,149 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pricing Cards</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <section class="landing-page-section">
-        <h2>Become <span class="gradient-text">Atheros Member</span></h2>
-        <p>
-          The price for each plan represents a one-time payment. <!--? more text here -->
-        </p>
-        <div class="pricing-container">
-          <article class="pricing-card pricing-card--primary">
-            <img
-              src="assets/complete-package.svg"
-              alt="Complete Package"
-              class="plan-icon"
-            >
-            <h3>The Complete Package</h3>
-            <div class="pricing-card__price">
-              <img
-                alt="Price"
-                src="assets/price.svg"
-              >
-              $94.00
-              <s>$174</s>
-            </div>
-            <a
-              class="enroll"
-              title="Enroll Now"
-              target="_blank"
-              rel="noopener"
-              href="https://learning.atheros.ai/course-detail/ux-design-process"
-            >
-              Enroll Now
-            </a>
-            <div class="divider"></div>
-            <ul>
-              <li>
-                The Complete Package includes all the benefits mentioned in the next two packages 👇🏼
-              </li>
-              <!--? More benefits here -->
-            </ul>
-          </article>       
-          <!--? More cards here -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pricing-container">
+      <article class="pricing-card">
+        <h3>Essential</h3>
+        <div>
+          Essential features
         </div>
-      </section>
-    </body>
+        <div class="pricing-card__price--original">
+          <s>$59.99</s>
+        </div>
+        <div class="pricing-card__price">
+          $54.99
+        </div>
+        <div class="period">
+          / month
+        </div>
+        <ul>
+          <li>Basic access to content and resources.</li>
+          <li>Email support with a 48-hour response time.</li>
+          <li>Access to community forums for peer-to-peer support.</li>
+          <li>Monthly newsletter with updates and tips.</li>
+          <li>Limited access to standard tools and features.</li>
+        </ul>
+        <a class="enroll" href="#">
+          Choose Basic
+        </a>
+      </article>
+      <article class="pricing-card">
+        <h3>Advanced</h3>
+        <div>
+          Advanced features
+        </div>
+        <div class="pricing-card__price--original">
+          <s>$112.00</s>
+        </div>
+        <div class="pricing-card__price">
+          $89.99
+        </div>
+        <div class="period">
+          / month
+        </div>
+        <ul>
+          <li>All features of the Essential Plan.</li>
+          <li>Priority email support with a 24-hour response time.</li>
+          <li>Access to exclusive webinars and online events.</li>
+          <li>Enhanced tools and features, including analytics.</li>
+          <li>Customizable content experience based on user preferences. asfsfaafsfsafsafsafsaafsfsafsa</li>
+        </ul>
+        <a class="enroll" href="#">
+          Choose Advanced
+        </a>
+      </article>
+        
+        <article class="pricing-card pricing-card--primary">
+          <div class="pricing-card__banner">
+            Most popular
+          </div>
+          <h3>Pro</h3>
+          <div>
+            Advanced features
+          </div>
+          <div class="pricing-card__price--original">
+            <s>$125.00</s>
+          </div>
+          <div class="pricing-card__price">
+            $94.99
+          </div>
+          <div class="period">
+            / month
+          </div>
+          <ul>
+            <li>All features of the Advanced Plan.</li>
+            <li>Dedicated account manager for personalized assistance.</li>
+            <li>Early access to new features and beta programs.</li>
+            <li>Advanced analytics and detailed reports.</li>
+            <li>High-priority customer service with instant chat support.</li>
+          </ul>
+          <a class="enroll" href="#">
+            Choose Pro
+          </a>
+        </article>
+
+    </div>
+</body>
+
 </html>
-
-          <!-- You get <strong>lifetime access</strong> to mentioned benefits with a <strong>single payment</strong>. -->
-
-<!-- <li>
-                Online Video Course
-              </li>
-              <li>
-                E-book in PDF format
-              </li>
-              <li>
-                Design resources + special deals on design assets
-              </li>
-              <li>
-                Access to the Slack mentoring channel
-              </li> -->
-
-<!-- <article class="pricing-card">
-  <img
-    src="assets/video.svg"
-    alt="Video Course"
-    class="plan-icon"
-  >
-  <h3>Video Course</h3>
-  <div class="pricing-card__price">
-    <img
-      alt="Price"
-      src="assets/price.svg"
-    >
-    $86.00
-    <s>$49</s>
-  </div>
-  <a
-    class="enroll"
-    title="Enroll Now"
-    target="_blank"
-    rel="noopener"
-    href="https://learning.atheros.ai/course-detail/ux-design-process"
-  >
-    Enroll Now
-  </a>
-  <div class="divider"></div>
-  <ul>
-    <li>
-      More than 4.5 hours of videos (theory explained on practical examples + designing real app design in Figma)
-    </li>
-    <li>
-      10 Modules, 31 Chapters, 30 Quizzes + Certificate
-    </li>
-    <li>
-      Get feedback and mentoring directly from Jan Mraz and other members in a private Slack channel
-    </li>
-    <li>
-      Database with useful design freebies, tools, and other links
-    </li>
-  </ul>
-</article>
-<article class="pricing-card">
-  <img
-    src="assets/ebook.svg"
-    alt="E-book Package"
-    class="plan-icon"
-  >
-  <h3>E-book</h3>
-  <div class="pricing-card__price">
-    <img
-      alt="Price"
-      src="assets/price.svg"
-    >
-    $27.00
-    <s>$29</s>
-  </div>
-  <a
-    class="enroll"
-    title="Enroll Now"
-    target="_blank"
-    rel="noopener"
-    href="https://learning.atheros.ai/course-detail/ux-design-process"
-  >
-    Enroll Now
-  </a>
-  <div class="divider"></div>
-  <ul>
-    <li>
-      150+ pages of design knowledge in PDF format
-    </li>
-    <li>
-      Design explained on practical examples + components cheatsheet
-    </li>
-    <li>
-      Database with useful design freebies, tools, and other useful links
-    </li>
-    <li>
-      Special deals on design assets and tools that are available only for the Atheros students!
-    </li>
-  </ul>
-</article> -->
