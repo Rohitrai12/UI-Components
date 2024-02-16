@@ -1,14 +1,11 @@
 html {
   font-size: 16px;
-  font-family: Manrope;
-  letter-spacing: 0.75px;
+  font-family: Manrope, sans-serif;
 }
-
 
 * {
   box-sizing: border-box;
 }
-
 
 :root {
   --primary-blue: #3F8CFF;
