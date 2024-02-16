@@ -32,7 +32,7 @@ nav {
 }
 
 .navigation {
-    max-width: 600px;
+    max-width: 40rem;
     width: 100%;
     display: flex;
     flex-direction: row;

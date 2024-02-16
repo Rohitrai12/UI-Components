@@ -10,7 +10,7 @@
     --color: #828B94;
     --github: #C9D1D9;
     --navigation-hover: #292F36;
-    --navbar-height: 60px;
+    --navbar-height: 4rem;
 }
 
 body {
@@ -31,12 +31,12 @@ body {
     justify-content: space-between;
     width: 100vw;
     z-index: 2;
-    gap: 24px; 
+    gap: 1.5rem; 
     background-color: var(
         --github-dark
     );
     height: var(--navbar-height);
-    padding: 0px 16px;
+    padding: 0px 1rem;
     border-bottom: 1px solid var(--github-dark-border);
     align-items: center;
 }
@@ -44,15 +44,15 @@ body {
 .logo__wrapper {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .page__title {
     color: var(--github);
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     align-items: center;
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     text-decoration: none;
 }
 
@@ -61,10 +61,10 @@ body {
 }
 
 .notification-mark {
-    width: 8px;
-    height: 8px;
-    top: -3px;
-    right: -3px;
+    width: 0.5rem;
+    height: 0.5rem;
+    top: -0.2rem;
+    right: -0.2rem;
     border-radius: 50%;
     position: absolute;
     background-color: var(--notification);
@@ -77,8 +77,8 @@ body {
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
 
@@ -88,7 +88,7 @@ body {
 
 .action-buttons {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     margin-left: auto;
     align-items: center;
     flex-wrap: nowrap;
@@ -98,8 +98,8 @@ body {
     position: relative;
     display: grid;
     grid-auto-columns: max-content;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     color: var(--github-dark-lighter);
     background: transparent;
     border: 1px solid var(--github-dark-border);
@@ -120,8 +120,8 @@ body {
 
 .avatar-profile {
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
     border: 1px solid var(--github-dark-border);
     object-fit: cover;
     border-radius: 50%;
@@ -138,7 +138,7 @@ body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    padding: 12px;
+    padding: 0.75rem;
     right: 0;
     position: fixed;
     box-shadow: 
@@ -151,25 +151,26 @@ body {
 .navigation__menu__items {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
     list-style-type: none;
     margin: 0;
-    margin-top: 16px;
+    margin-top: 1rem;
     padding: 0;
     color: var(--github-button-hover);
 }
 
 .navigation__menu__items > li {
     display: flex;
-    gap: 10px;
-    border-radius: 4px;
-    font-size: 14px;
-    height: 36px;
-    border-radius: 6px;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    height: 2.25rem;
+    border-radius: 0.4rem;
     align-items: center;
+    white-space: nowrap;
     cursor: pointer;
     color: var(--color);
-    padding: 0px 8px;
+    padding: 0px 0.5rem;
 }
 
 .navigation__menu__items > li:hover {
@@ -184,7 +185,7 @@ body {
 .navigation__menu__items > .separator {
     display: flex;
     align-items: center;
-    height: 6px;
+    height: 0.4rem;
     padding: 0;
 }
 
@@ -199,13 +200,13 @@ body {
 
 .avatar-wrapper {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     align-items: center;
 }
 
 .avatar-wrapper .avatar-profile {
-    width: 42px;
-    height: 42px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .avatar-name-wrapper {
@@ -220,18 +221,18 @@ body {
 
 .avatar-name {
     color: var(--color);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .close-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 0.4rem;
     margin-left: auto;
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
 }
 
 .close-button:hover {
@@ -239,8 +240,8 @@ body {
 }
 
 .close-button svg {
-    height: 16px;
-    width: 16px;
+    height: 1rem;
+    width: 1rem;
     fill: var(--github);
 }
 
@@ -253,7 +254,7 @@ body {
     100% {
         opacity: 1;
         visibility: visible;
-        max-width: 320px;
+        max-width: 20rem;
     }
 }
 
@@ -270,7 +271,7 @@ body {
 @keyframes fadeOutAnimation {
     0% {
         opacity: 1;
-        max-width: 320px;
+        max-width: 20rem;
         visibility: visible;
     }
     100% {

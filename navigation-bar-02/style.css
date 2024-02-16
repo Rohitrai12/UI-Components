@@ -89,9 +89,9 @@ body {
 
 .active-bar {
     position: absolute;
-    top: -16px;
+    top: -1rem;
     min-width: var(--item-width);
-    height: 8px;
+    height: 0.5rem;
     background: var(--primary);
     z-index: 1;
     transition: 0.5s;

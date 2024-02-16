@@ -19,7 +19,7 @@ body {
 
 .parallax-image {
     display: block;
-    height: 940px;
+    height: 58.75rem;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -39,11 +39,11 @@ body {
     background-image: url("assets/winter_forest.jpg");
 }
 section {
-    padding: 64px;
+    padding: 4rem;
 }
 
 section > h2 {
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
   

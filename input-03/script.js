@@ -8,9 +8,9 @@ inputIcon.addEventListener("click", (e) => {
     inputIcon.setAttribute(
         'src', 
         input.getAttribute('type') === 'password' ?
-        'eye-off.svg'
+        'assets/eye-off.svg'
           :
-        'eye.svg'
+        'assets/eye.svg'
     );
 
     input.setAttribute(
