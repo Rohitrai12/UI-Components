@@ -4,14 +4,12 @@ const expand_btn = document.querySelector(".expand-btn");
 let activeIndex;
 
 expand_btn.addEventListener("click", () => {
-  const iconImage = expand_btn.querySelector('img');
-
   document.body.classList.toggle("collapsed");
 });
 
 const current = window.location.href;
 
-const allLinks = document.querySelectorAll(".sidebar-links a")
+const allLinks = document.querySelectorAll(".sidebar-links a");
 
 allLinks.forEach((elem) => {
   elem.addEventListener('click', function() {
