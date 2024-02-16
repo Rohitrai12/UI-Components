@@ -1,5 +1,4 @@
 
-
 :root {
     --primary: #4978F0;
     --primary-light: #E1EEF5;
@@ -9,7 +8,7 @@
 }
 
 body {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 * {
@@ -30,7 +29,7 @@ body {
     height: 1.5rem;
 }
 
-.socials-row > a {
+.socials-row>a {
     padding: 0.5rem;
     border-radius: 0.5rem;
     width: 100%;
@@ -47,7 +46,7 @@ body {
     font-weight: 700;
 }
 
-.socials-row > a:hover {
+.socials-row>a:hover {
     border: 1px solid var(--primary);
 }
 
@@ -66,7 +65,7 @@ body {
     opacity: .2;
 }
 
-.login-wrapper {
+.form-wrapper {
     position: relative;
     display: grid;
     grid-template-columns: 4fr 3fr;
@@ -74,8 +73,8 @@ body {
 }
 
 
-.login-side {
-    padding: 11.75rem 2rem 3rem 2rem;
+.form-side {
+    padding: 9.25rem 3rem 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -83,14 +82,14 @@ body {
 
 .info-side {
     height: 100vh;
-    padding: 5.25rem 3rem 3rem 2rem;
+    padding: 9.25rem 3rem 3rem 2rem;
     color: #401B3D;
-    width: 100%;
     display: flex;
     overflow: hidden;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    flex-grow: 1;
     background-color: var(--background);
 }
 
@@ -120,36 +119,28 @@ body {
     left: 1.25rem;
 }
 
-.my-form__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    max-width: 28.75rem;
-    width: 100%;
-    padding: 3rem 2rem;
-    height: fit-content;
-    box-shadow: 
-        rgba(100, 100, 111, 0.2)
-        0rem 6px 26px 0rem;
-}
-
 .my-form {
     display: flex;
     flex-direction: column;
     justify-content: start;
     position: relative;
     gap: 1rem;
+    max-width: 28.75rem;
+    width: 100%;
+    padding: 3rem 2rem;
+    height: fit-content;
+    box-shadow:
+        rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.login-welcome {
+.form-welcome {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.login-welcome-row {
+.form-welcome-row {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -175,7 +166,7 @@ body {
     min-height: 3.125rem;
     width: 100%;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
@@ -226,32 +217,41 @@ body {
     max-width: 100%;
     width: 100%;
     border: 1px solid var(--secondary);
-    height: 3.125rem;
+    height: 3rem;
     letter-spacing: .03rem;
     background-color: transparent;
     outline: none;
     transition: .25s;
     border-radius: 0.5rem;
-    text-indent: 1.25rem;
-    margin-top: 0.5rem;
+    text-indent: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.text-field label:focus-within {
+    color: var(--primary);
 }
 
 .text-field {
     position: relative;
 }
 
-.text-field img {
+.text-field svg {
     position: absolute;
     right: -0.125rem;
     bottom: -0.25rem;
     width: 1.875rem;
     height: 1.875rem;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transform-origin: center;
 }
 
 .text-field input:focus {
-    border: 0.0625rem solid var(--primary);
+    border: 1px solid var(--primary);
+}
+
+
+.text-field input:focus+svg {
+    stroke: var(--primary);
 }
 
 .text-field label {
@@ -263,11 +263,11 @@ body {
 }
 
 @media (max-width: 640px) {
-    .login-wrapper {
+    .form-wrapper {
         grid-template-columns: 1fr;
         height: 100vh;
     }
-    
+
     .info-side {
         flex-direction: column-reverse;
         padding: 3rem 3rem 3rem 2rem;

@@ -97,7 +97,7 @@ body {
     display: flex;
     flex-direction: row;
     color: var(--secondary);
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
 }
 

@@ -41,7 +41,10 @@ body {
     transition: transform 600ms ease;
     transform-style: preserve-3d;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 auto;
 }
+
+
 
 .card:hover .card__inner {
     transform: rotateY(180deg);
@@ -125,7 +128,7 @@ body {
     width: 1.25rem;
     height: 1.45rem;
     border: 1px solid #333;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     background-image:
         linear-gradient(to bottom left,
             #efdbab, #e1cb94);

@@ -22,14 +22,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
     list-style: none;
 }
 
 .social-media-buttons li {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     display: grid;
     background-color: var(--primary-color);
@@ -53,8 +53,8 @@
 }
 
 .social-media-buttons li a svg {
-    height: 24px;
-    width: 24px;
+    height: 1.5rem;
+    width: 1.5rem;
     stroke: var(--secondary-color);
     stroke-width: 1.75;
     transition: 0.8s;
