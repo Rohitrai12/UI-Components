@@ -32,10 +32,10 @@ html {
   position: sticky;
   top: 0;
   left: 0;
-  min-height: 860px;
+  min-height: 53.75rem;
   height: 100%;
-  padding: 16px 0px;
-  border-radius: 16px;
+  padding: 1rem 0px;
+  border-radius: 1rem;
   max-width: 18rem;
   display: flex;
   color: var(--white);
@@ -45,7 +45,7 @@ html {
 }
 
 body.collapsed .sidebar {
-  max-width: 80px;
+  max-width: 5rem;
   display: flex;
   align-items: center;
 }
@@ -57,17 +57,17 @@ body.collapsed .hide {
 
 /*? search wrapper */
 .search__wrapper {
-  padding: 0 16px;
+  padding: 0 1rem;
   position: relative;
 }
 
 .search__wrapper input {
   background-color: var(--background);
-  height: 40px;
+  height: 2.5rem;
   width: 100%;
-  border-radius: 8px;
-  padding: 0 8px;
-  padding-left: 32px;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  padding-left: 2rem;
   flex-grow: 1;
   outline: none;
   border: none;
@@ -77,10 +77,10 @@ body.collapsed .hide {
   position: absolute;
   z-index: 2;
   top: 50%;
-  left: 26px;
+  left: 1.625rem;
   transform: translateY(-50%);
   pointer-events: none;
-  right: 24px;
+  right: 1.5rem;
 }
 
 body.collapsed .search__wrapper svg {
@@ -97,7 +97,7 @@ body.collapsed .search__wrapper svg {
 }
 
 body.collapsed .search__wrapper input {
-  max-width: 40px;
+  max-width: 2.5rem;
 }
 
 body.collapsed .search__wrapper input::-webkit-input-placeholder {
@@ -117,8 +117,8 @@ body.collapsed .search__wrapper input::-webkit-input-placeholder {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 64px;
-  padding-bottom: 16px;
+  height: 4rem;
+  padding-bottom: 1rem;
 }
 
 body.collapsed .sidebar-top {
@@ -128,15 +128,15 @@ body.collapsed .sidebar-top {
 }
 
 .logo__wrapper {
-  margin-top: -4px;
+  margin-top: -0.25rem;
   display: flex;
   align-items: center;
   color: var(--text-link);
   font-weight: 700;
   text-decoration: none;
   font-size: 1.35rem;
-  gap: 8px;
-  padding: 0 16px;
+  gap: 0.5rem;
+  padding: 0 1rem;
 }
 
 .logo-small {
@@ -148,17 +148,17 @@ body.collapsed .sidebar-top {
 
 /*? menu links */
 .sidebar-links {
-  margin-top: 16px;
+  margin-top: 1rem;
   width: 100%;
 }
 
 .sidebar-links h2 {
-  margin-left: 16px;
+  margin-left: 1rem;
   color: var(--headline);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 18px;
-  margin-bottom: 8px;
+  line-height: 1.125rem;
+  margin-bottom: 0.5rem;
   animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -170,10 +170,10 @@ body.collapsed h2 {
   list-style-type: none;
   position: relative;
   display: flex;
-  column-gap: 8px;
+  column-gap: 0.5rem;
   flex-direction: column;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar-links li {
@@ -188,9 +188,9 @@ body.collapsed .sidebar-links li {
 
 .sidebar-links li svg {
   stroke: var(--text-link);
-  width: 28px;
-  height: 28px;
-  min-width: 28px;
+  width: 1.;
+  height: 1.75rem;
+  min-width: 1.75rem;
 }
 
 .sidebar-links li a:hover {
@@ -200,13 +200,13 @@ body.collapsed .sidebar-links li {
 .sidebar-links li a {
   color: var(--text-link);
   flex-grow: 1;
-  padding: 0 16px;
+  padding: 0 1rem;
   font-size: 1.25rem;
   display: flex;
-  gap: 28px;
+  gap: 1.75rem;
   justify-content: center;
   align-items: center;
-  height: 56px;
+  height: 3.5rem;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out;
 }
@@ -219,8 +219,8 @@ body.collapsed .sidebar-links li {
 }
 
 .sidebar-links li a img {
-  height: 34px;
-  width: 34px;
+  height: 2.125rem;
+  width: 2.125rem;
 }
 
 .sidebar-links .active:hover {
@@ -237,7 +237,6 @@ body.collapsed .sidebar-links li {
   stroke: var(--text-link);
 }
 
-
 /* ?tooltip */
 .tooltip {
   position: relative;
@@ -248,8 +247,8 @@ body.collapsed .sidebar-links li {
   position: absolute;
   top: 50%;
   left: 0%;
-  margin-left: -10px;
-  margin-top: -5px;
+  margin-left: -0.625rem;
+  margin-top: -0.3125rem;
   border-width: 5px;
   border-style: solid;
   border-color: transparent var(--primary-color) transparent transparent;
@@ -260,11 +259,11 @@ body.collapsed .sidebar-links li {
   background-color: var(--primary-color);
   color: var(--white);
   text-align: center;
-  border-radius: 6px;
-  padding: 6px 12px;
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
   position: absolute;
   z-index: 1;
-  left: 90px;
+  left: 5.625rem;
 }
 
 .collapsed .tooltip:hover .tooltip__content {
@@ -273,15 +272,15 @@ body.collapsed .sidebar-links li {
 
 /*? profile part */
 .sidebar__profile {
-  margin-top: 16px;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
   flex-direction: row;
-  padding: 0 16px;
+  padding: 0 1rem;
   color: var(--text-link);
   overflow-x: hidden;
-  min-height: 42px;
+  min-height: 2.6125rem;
 }
 
 .avatar__wrapper {
@@ -291,8 +290,8 @@ body.collapsed .sidebar-links li {
 
 .avatar {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   object-fit: cover;
   cursor: pointer;
   border-radius: 50%;
@@ -301,7 +300,7 @@ body.collapsed .sidebar-links li {
 .avatar__name {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.25rem;
   white-space: nowrap;
   animation: fadeIn 0.2s ease-in-out;
 }
@@ -315,7 +314,7 @@ body.collapsed .sidebar-links li {
 
 .email {
   color: var(--text-link);
-  font-size: 13px;
+  font-size: 0.8125rem;
   animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -341,17 +340,17 @@ body.collapsed .logout {
   cursor: pointer;
   background-color: var(--expand-button);
   z-index: 2;
-  right: -18px;
-  width: 40px;
-  height: 40px;
+  right: -1.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 
 .expand-btn svg {
   transform: rotate(-180deg);
   stroke: var(--white);
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 body.collapsed .expand-btn svg {
@@ -364,7 +363,7 @@ body.collapsed .expand-btn svg {
 
 @keyframes fadeIn {
   from {
-    width: 0px;
+    width: 0;
     opacity: 0;
   }
 

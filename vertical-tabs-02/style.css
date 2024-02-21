@@ -10,12 +10,12 @@
 }
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 16px;
+    padding: 1rem;
     background-color: var(--body-background);
 }
 
@@ -27,11 +27,11 @@ body {
 
 .tabs-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     display: flex;
-	margin: 10px;
+	margin: 0.625rem;
     overflow: hidden;
-	border-radius: 16px;
+	border-radius: 1rem;
     background-color: var(--white);
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;	
 }
@@ -39,32 +39,32 @@ body {
 .tab-content-wrapper {
     overflow-y: hidden;
     overflow-x: auto;
-    height: 540px;
-    min-width: 300px;
+    height: 33.75rem;
+    min-width: 18rem;
     color: var(--secondary);
     transition: all 0.45s ease-in-out;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
 }
 
 .tab-content h2 {
     color: var(--secondary);
     font-size: 1.3rem;
     font-weight: 600;
-    margin-top: 0px;
-    margin-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 .tab-content {
     display: block;
     font-size: 1rem;
-    padding: 24px 8px;
-    width: 400px;
-    height: 540px;
+    padding: 1.5rem 0.5rem;
+    width: 24rem;
+    height: 33.75rem;
     transition: all 0.45s ease-in-out;
 }
 
 .tab-content img {
-    max-width: 300px;
+    max-width: 18rem;
     width: 80%;
     flex-grow: 1;
 }
@@ -79,24 +79,24 @@ body {
 .tabs a {
     position: relative;
     display: flex;
+    justify-content: start;
+    align-items: center;
     text-decoration: none;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: var(--secondary-light);
     overflow: hidden;
     text-align: left;
-    justify-content: start;
-    height: 90px;
-    padding: 0px 24px;
-    width: 350px;
-    align-items: center;
-    gap: 16px;
+    height: 5.5rem;
+    padding: 0px 1.5rem;
+    width: 22rem;
+    gap: 1rem;
 }
 
 .tabs a img {
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 .tabs .active, .tabs a:hover {
@@ -106,10 +106,9 @@ body {
     border-right: 3px solid var(--primary);
 }
 
-
 .tabs a svg {
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     stroke: var(--secondary-light);
 }
 

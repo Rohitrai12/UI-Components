@@ -12,7 +12,7 @@
 }
 
 .background {
-    background-color: var(--background);
+    background: var(--background);
     display: grid;
     place-items: center;
     height: 100vh;
@@ -22,12 +22,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .social-media-button {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     outline: 2px solid white;
     cursor: pointer;
@@ -58,13 +58,13 @@
 }
 
 .social-media-button:hover:nth-child(2) {
-    background-color: var(--twitter);
+    background: var(--twitter);
 }
 
 .social-media-button:hover:nth-child(3) {
-    background-color: var(--youtube);
+    background: var(--youtube);
 }
 
 .social-media-button:hover:nth-child(4) {
-    background-color: var(--linkedin);
+    background: var(--linkedin);
 }

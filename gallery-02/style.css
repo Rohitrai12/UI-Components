@@ -19,45 +19,37 @@
 
 .gallery {
     display: flex;
-    left: calc(50% - 330px);
+    left: calc(50% - 19rem);
 }
 
 .card {
     position: relative;
-    left: 0px;
-    width: 110px;
-    height: 160px;
+    left: 0;
+    width: 7.5rem;
+    height: 10rem;
     background-color: var(--background-card);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: 1s ease-in-out;
     overflow: hidden;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
 }
 
 .card:not(:first-child) {
-    margin-left: -45px;
+    margin-left: -3rem;
 }
 
 .card:hover {
-    transform: translateY(-16px);
+    transform: translateY(-1rem);
     font-weight: bold;
     cursor: pointer;
 }
 
 .card:hover ~ .card {
-    left: 55px;
+    left: 3.5rem;
 }
 
 .card img {
-    height: 160px;
+    height: 10rem;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
-
-
-
-
-/* https://hype4.academy/tools/glassmorphism-generator */
-
-/* frosted border */
-/* https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak */

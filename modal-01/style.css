@@ -11,8 +11,8 @@
 
 * {
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -71,7 +71,6 @@ body {
     margin-top: 4rem;
     border: none;
     background-color: var(--white);
-    animation: fadeInAnimation ease-in-out 0.5s forwards;
 }
 
 .copy-link-dialog header {
@@ -88,9 +87,6 @@ body {
     color: var(--headline);
 }
 
-.copy-link-dialog--fadeout {
-    animation: fadeOutAnimation ease-in-out 0.5s forwards;
-}
 
 .copy-link-dialog__content {
     padding: 2rem;
@@ -143,17 +139,4 @@ body {
     background-color: var(--white);
     border: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 6px;
-}
-
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    100% {
-        opacity: 1;
-        visibility: visible;
-    }
 }

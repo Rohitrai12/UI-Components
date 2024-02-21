@@ -11,7 +11,7 @@
     --gray-border-hover: #505050;
     --gray-menu-button: #7E7E7E;
     --gray-menu-button-hover: #232323;
-    --navbar-height: 64px;
+    --navbar-height: 4rem;
     --gray-text-hover: #8F8F8F;
     --gray-icon: #A0A0A0;
 
@@ -62,16 +62,16 @@ body {
 }
 
 .logo img {
-    height: 24px;
+    height: 1.5rem;
 }
 
 .navigation {
-    margin-left: 32px;
+    margin-left: 2rem;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     background-color: var(--background);
 }
 
@@ -80,7 +80,7 @@ body {
     position: relative;
     cursor: pointer;
     align-items: center;
-    min-height: 36px;
+    min-height: 2.25rem;
 }
 
 .navigation>li>a {
@@ -101,15 +101,15 @@ body {
     border: none;
     cursor: pointer;
     z-index: 1;
-    margin-right: -4px;
+    margin-right: -0.25rem;
     align-items: center;
-    min-height: 36px;
+    min-height: 2.25rem;
     font-size: 14px;
-    gap: 4px;
+    gap: 0.25rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     flex-wrap: nowrap;
-    padding: 4px 10px;
+    padding: 0.25rem 0.7rem;
     white-space: nowrap;
     background: none;
     display: flex;
@@ -154,15 +154,15 @@ body {
 /* dropdown menu */
 .dropdown__wrapper {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    padding-top: 60px;
+    top: 0;
+    left: 0;
+    padding-top: 5rem;
 }
 
 .dropdown {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: none;
-    padding: 8px;
+    padding: 0.5rem;
     width: 100%;
     max-width: 600px;
     border: 1px solid var(--gray-border);
@@ -187,7 +187,7 @@ body {
 
 .list-items-with-description li:hover {
     background-color: var(--secondary-background);
-    border-radius: 6px;
+    border-radius: 0.3rem;
 }
 
 .icon-wrapper svg {
@@ -246,7 +246,7 @@ body {
 .action-buttons a {
     text-decoration: none;
     white-space: nowrap;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     transition: all 0.2s ease-in-out;
     line-height: 1.25rem;
 }

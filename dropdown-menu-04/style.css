@@ -111,7 +111,7 @@ body {
 
 .navigation > li > button:hover > svg {
     opacity: 0.75;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .dropdown {

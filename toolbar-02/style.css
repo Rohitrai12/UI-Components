@@ -13,7 +13,7 @@
 body {
     font-family: 'Poppins', 
         sans-serif;
-    margin: 0px;
+    margin: 0;
     display: flex;
     height: 100vh;
     background-color: var(
@@ -40,11 +40,10 @@ html {
 }
 
 header {
-    height: 80px;
-    padding: 0 16px;
+    height: 5rem;
+    padding: 0 1rem;
     background-color: var(--white);
     width: 100%;
-  
     display: flex;
     align-items: center;
     box-shadow: 
@@ -56,13 +55,13 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    gap: 6px;
+    gap: 0.4rem;
 }
 
 .navigation__group .icon {
-    width: 48px;
-    height: 48px;
-    padding: 6px;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.4rem;
     transition: all 0.2s 
         ease-in-out;
     border-radius: 50%;
@@ -81,8 +80,8 @@ button:nth-child(1) {
 
 .profile {
     display: block;
-    width: 44px;
-    height: 44px;
+    width: 2.6rem;
+    height: 2.6rem;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -94,9 +93,9 @@ button:nth-child(1) {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    max-width: 22rem;
     width: 100%;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     right: 0;
     position: fixed;
     box-shadow: 
@@ -109,7 +108,7 @@ button:nth-child(1) {
 .quick-settings__content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .quick-settings--headline {
@@ -133,24 +132,24 @@ button:nth-child(1) {
     0% {
         opacity: 0;
         visibility: hidden;
-        width: 0px;
+        width: 0;
     }
     100% {
         opacity: 1;
         visibility: visible;
-        width: 350px;
+        width: 22rem;
     }
 }
 
 @keyframes fadeOutAnimation {
     0% {
         opacity: 1;
-        width: 350px;
         visibility: visible;
+        width: 22rem;
     }
     100% {
         opacity: 0;
-        width: 0px;
+        width: 0;
         visibility: hidden;
     }
 }
@@ -160,7 +159,7 @@ button:nth-child(1) {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     justify-content: 
         space-between;
 }
@@ -172,8 +171,8 @@ button:nth-child(1) {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 3.75rem;
+    height: 2.125rem;
 }
   
 .switch input {
@@ -195,10 +194,10 @@ button:nth-child(1) {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 1.7rem;
+    width: 1.7rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
     background-color: white;
     transition: .4s;
 }
@@ -216,7 +215,7 @@ button:nth-child(1) {
 
 /* Rounded sliders */
 .slider.round {
-    border-radius: 34px;
+    border-radius: 2.125rem;
 }
 
 .slider.round:before {

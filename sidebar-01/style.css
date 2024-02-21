@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
-
 :root {
     --primary-color: #625BFE;
     --primary-color-dark: #7771F6;    
@@ -13,7 +11,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Mulish;
+}
+
+body {
+  font-family: Mulish, sans-serif;
 }
 
 .background {
@@ -54,14 +55,14 @@ main {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .sidebar-top .logo {
   position: relative;
-  width: 54px;
+  width: 3.37rem;
   margin-right: 1.45rem;
-  left: -1px;
+  left: -0.125rem;
 }
 
 .sidebar-top h2 {
@@ -73,25 +74,25 @@ main {
 .expand-btn {
   position: absolute;
   top: 50%;
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   display: grid;
   place-items: center;
   background-color: var(--button-color);
-  border-radius: 6px;
+  border-radius: 0.375rem;
   cursor: pointer;
-  box-shadow: 0 3px 10px -3px var(--button-color-shadow);
   right: -3rem;
-  transform: translateY(-50%) translateX(-8px);
+  transform: translateY(-50%) translateX(-0.5rem);
   opacity: 0;
   pointer-events: none;
   transition: 0.3s;
+  box-shadow: 0 3px 10px -3px var(--button-color-shadow);
 }
 
 
 nav:hover .expand-btn,
 .expand-btn.hovered {
-  transform: translateY(-50%) translateX(0px);
+  transform: translateY(-50%) translateX(0);
   opacity: 1;
   pointer-events: all;
 }
@@ -107,14 +108,14 @@ nav:hover .expand-btn,
 }
 
 .sidebar-links li a {
-  padding: 12px;
+  padding: 0.75rem;
   color: var(--text-color);
   font-size: 1.25rem;
   display: flex;
   align-items: center;
-  height: 56px;
+  height: 3.5rem;
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .icon {
@@ -123,13 +124,13 @@ nav:hover .expand-btn,
 }
 
 .icon img {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   margin: auto;
 }
 
 .sidebar-links .link {
-  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 
 .sidebar-links .active {
@@ -137,11 +138,11 @@ nav:hover .expand-btn,
   text-decoration: none;
   background-color: var(--primary-color-dark);
   transition: all 100ms ease-in;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 body.collapsed nav {
-  width: 80px;
+  width: 5rem;
 }
 
 body.collapsed .hide {

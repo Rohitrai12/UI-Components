@@ -5,108 +5,76 @@
     <meta charset="UTF-8">
     <title>Signup Example</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="form-wrapper">
-        <div class="form-side">
+        <main class="form-side">
             <a href="#" title="Logo">
-                <img class="logo" src="assets/logo.png" alt="Logo">
+                <img src="assets/logo.svg" alt="Supabase Logo" class="logo">
             </a>
             <form class="my-form">
-                <div class="login-welcome-row">
-                    <h1>Create your account &#x1F44F;</h1>
+                <div class="form-welcome-row">
+                    <h1>Get started</h1>
+                    <h2>Create a new account</h2>
                 </div>
                 <div class="socials-row">
                     <a href="#" title="Use Google">
-                        <img src="assets/google.png" alt="Google">
-                        Sign up with Google
-                    </a>
-                    <a href="#" title="Use Apple">
-                        <img src="assets/apple.png" alt="Apple">
-                        Sign up with Apple
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
+                        Continue with Github
                     </a>
                 </div>
                 <div class="divider">
-                    <span class="divider-line"></span>
-                    Or
-                    <span class="divider-line"></span>
+                    <div class="divider-line"></div>
+                    or
+                    <div class="divider-line"></div>
                 </div>
                 <div class="text-field">
-                    <label for="email">Email:
-                        <input type="email" id="email" name="email" autocomplete="off" placeholder="Your Email"
-                            required>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-                            <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
-                        </svg>
-                    </label>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="off" placeholder="you@example.com"
+                        required>
+                    <div class="error-message">Email in incorrect format</div>
                 </div>
                 <div class="text-field">
-                    <label for="password">Password:
-                        <input id="password" type="password" name="password" placeholder="Your Password" title="Minimum 6 characters at 
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="Your password" title="Minimum 6 characters at 
                                                         least 1 Alphabet and 1 Number"
-                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z">
-                            </path>
-                            <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
-                            <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
-                        </svg>
-                    </label>
-                </div>
-                <div class="text-field">
-                    <label for="confirm-password">Repeat Password:
-                        <input id="confirm-password" type="password" name="password" placeholder="Repeat Password"
-                            title="Minimum 6 characters at east 1 Alphabet and 1 Number"
-                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z">
-                            </path>
-                            <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
-                            <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
-                        </svg>
-                    </label>
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                    <div class="error-message">Minimum 6 characters at
+                        least 1 Alphabet and 1 Number</div>
                 </div>
                 <button class="my-form__button" type="submit">
                     Sign up
                 </button>
                 <div class="my-form__actions">
                     <div class="my-form__row">
-                        <span>Did you forget your password?</span>
+                        <span>Have an account?</span>
                         <a href="#" title="Reset Password">
-                            Reset Password
-                        </a>
-                    </div>
-                    <div class="my-form__signup">
-                        <a href="#" title="Login">
-                            Login
+                            Sign In Now
                         </a>
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="info-side">
-            <img src="assets/mock.png" alt="Mock" class="mockup" />
-            <div class="welcome-message">
-                <h2>Navitron Maps! 👋</h2>
-                <p>
-                    Your ultimate guide to navigating the world
-                    and discovering new places with ease.
-                </p>
+        </main>
+        <aside class="info-side">
+            <div class="blockquote-wrapper">
+                <blockquote>
+                    Working with Supabase is just fun. It makes working with a DB so much easier.
+                </blockquote>
+                <div class="author">
+                    <img src="assets/avatar.png" alt="Avatar" class="avatar">
+                    <span class="author-name">@avatar</span>
+                </div>
             </div>
-        </div>
+        </aside>
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>

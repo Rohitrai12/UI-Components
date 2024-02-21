@@ -28,11 +28,11 @@ body {
 }
 
 .stock-watchlist-container {
-    padding: 24px;
-    max-width: 400px;
+    padding: 1.5rem;
+    max-width: 25rem;
     width: 100%;
     background-color: var(--white);
-    border-radius: 32px;
+    border-radius: 2rem;
     margin: auto;
     box-shadow:
         rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
@@ -44,7 +44,7 @@ body {
     font-size: 1.3rem;
     display: flex;
     color: var(--gray-dark);
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .stock-watchlist-container h2 svg {
@@ -57,19 +57,19 @@ body {
 #stocks {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .stock-row {
     position: relative;
     z-index: 1;
-    min-height: 60px;
+    min-height: 3.75rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    border-radius: 24px;
-    font-size: 16px;
-    padding: 16px;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem;
     align-items: center;
     background-color: var(--white);
     box-shadow:
@@ -83,16 +83,16 @@ body {
 
 
 .stock-avatar {
-    width: 60px;
-    height: 60px;
-    padding: 8px;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: 0.5rem;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .stock-name {
     display: grid;
-    gap: 2px;
+    gap: 0.125rem;
 }
 
 .stock-name h3 {
@@ -116,7 +116,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .price {
@@ -129,14 +129,14 @@ body {
 }
 
 .change {
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     background-color: var(--green);
     color: var(--white);
     display: flex;
     justify-content: end;
     align-items: center;
-    min-width: 60px;
-    border-radius: 8px;
+    min-width: 3.75rem;
+    border-radius: 0.5rem;
     font-weight: bold;
 }
 

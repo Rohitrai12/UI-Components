@@ -2,21 +2,21 @@
     --primary: #DD946F ;
     --primary-hover: #CD7D7C;                
     --background: #261E5A;
-    --navbar-height: 60px;
+    --navbar-height: 30.75rem;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
 }
 
 .background {
     display: block;
     width: 100vw;
     height: 100vh;
-    background-image: url(background.jpg);
+    background-image: url(assets/background.jpg);
     opacity: 1;
     z-index: 1;
     background-size: cover;
@@ -37,18 +37,18 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding-right: 24px;
-    gap: 32px;
+    padding-right: 1.5rem;
+    gap: 2rem;
     background-color: var(--background);
-    height: 60px;
+    height: 3.75rem;
     opacity: 0.9;
 }
 
 .menu-icon {
     cursor: pointer;
     display: flex;
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
 }
 
 .navigation {    
@@ -56,15 +56,15 @@
     flex-direction: row;
     list-style-type: none;
     align-items: center;
-    gap: 24px;
-    padding: 0px;
+    gap: 1.5rem;
+    padding: 0;
     background-color: var(--background);
 }
 
 .logo {
-    margin-left: 16px;
-    width: 32px;
-    height: 32px;
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
                     
@@ -90,7 +90,7 @@
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
-    padding: 3px 0;
+    padding: 0.225rem 0;
     position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -102,19 +102,16 @@
     background: var(--primary-hover);
     display: block;
     position: absolute;
-    bottom: -2px;
+    bottom: -0.125rem;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 0.125rem;
     transition: all 0.2s ease-in-out;
 }
   
 .navigation > li > a:hover {
     background-position: 0;
 }
-/*  hover effect inspired by 
-    https://codepen.io/team/css-tricks/pen/OJOXWPp
-*/
 
 .navigation > li > a:hover::before{
     width: 100%;
@@ -139,12 +136,12 @@
     .navigation--mobile {
         top: var(--navbar-height);
         position: absolute;
-        right: 0px;
+        right: 0;
         display: flex;
-        padding: 80px 60px;
+        padding: 5rem 3.75rem;
         min-height: 100%;
         background-color: var(--background);       
-        gap: 8px;
+        gap: 0.5rem;
         flex-direction: column;
         align-items: flex-start;
         opacity: 0.95;

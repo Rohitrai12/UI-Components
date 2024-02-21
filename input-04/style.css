@@ -25,27 +25,25 @@ body {
   align-items: center;
 }
 
-
 .box {
   background-color: var(--box-background);
-  padding: 24px;
-  padding-top: 12px;
-  border-radius: 16px;
+  padding: 1.5rem;
+  padding-top: 0.75rem;
+  border-radius: 1rem;
 }
 
 .input__wrapper {
   position: relative;
-  padding: 15px 0 0;
+  padding: 1rem 0 0;
 }
 
 .input__field {
   border: 0;
   border-bottom: 2px solid var(--secondary);
   outline: 0;
-  font-size: 16px;
   color: var(--text);
-  padding: 4px 0px;
-  padding-right: 32px;
+  padding: 0.25rem 0px;
+  padding-right: 2rem;
 
   background: transparent;
   transition: border-color 0.2s;
@@ -56,10 +54,10 @@ body {
 }
 
 .input__field:placeholder-shown~.input__label {
-  font-size: 16px;
+  font-size: 1rem;
   cursor: text;
   color: var(--secondary);
-  top: 20px;
+  top: 1.20rem;
 }
 
 label,
@@ -67,8 +65,8 @@ label,
   position: absolute;
   top: 0;
   display: block;
-  font-size: 14px;
-  left: -1px;
+  font-size: 0.875rem;
+  left: -0.0625rem;
   color: var(--secondary);
   transition: 0.3s;
 }
@@ -83,11 +81,11 @@ label,
 
 .input__icon {
   position: absolute;
-  right: -14px;
-  bottom: -11px;
-  width: 26px;
-  height: 26px;
-  padding: 2px;
+  right: -0.875rem;
+  bottom: -0.65rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.125;
   transform: translate(-50%, -50%);
   transform-origin: center;
   cursor: pointer;

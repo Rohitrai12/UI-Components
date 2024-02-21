@@ -15,7 +15,7 @@ body {
 .faq-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   margin-top: 12em;
 }
 
@@ -24,7 +24,7 @@ details {
 	margin: 0 auto;
 	width: 100%;
 	background: #F6FAFF;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	position: relative;
 	max-width: 600px;
   border: 1px solid #C3DEFF;
@@ -42,7 +42,7 @@ summary {
   font-weight: 600;
   display: flex;
   list-style: none;
-  padding: 1em;
+  padding: 1rem;
   align-items: center;
 }
 
@@ -71,7 +71,7 @@ summary:hover .expand-icon {
 
 .faq-content {
   color: #303651;
-  padding: 0.2em 1em 1em 1em;
+  padding: 0.2rem 1rem 1rem 1rem;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -83,6 +83,6 @@ summary:hover .expand-icon {
 .expand-icon {
   pointer-events: none;
   position: absolute;
-  right: 1em;
+  right: 1rem;
   transition: all 150ms ease-out;
 }

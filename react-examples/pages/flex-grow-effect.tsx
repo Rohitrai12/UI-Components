@@ -32,7 +32,7 @@ const FlexGrowPage = () => {
 
 .card {
     position: relative;
-    left: 0px;
+    left: 0;
     width: 80px;
     border-radius: 4px;
     padding: 8px;

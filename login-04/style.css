@@ -34,28 +34,28 @@ body {
 
 .socials-row {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .socials-row img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .socials-row>a {
-    padding: 8px;
-    border-radius: 99px;
+    padding: 0.5rem;
+    border-radius: 10rem;
     width: 100%;
-    min-height: 48px;
+    min-height: 3rem;
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     font-size: 1.1rem;
     color: var(--text);
-    padding: 8px;
+    padding: 0.5rem;
     background-color: var(--social-background);
     font-weight: 700;
 }
@@ -70,11 +70,11 @@ body {
 }
 
 .welcome-message {
-    max-width: 360px;
+    max-width: 24rem;
 }
 
 .logo {
-    height: 48px;
+    height: 3rem;
     margin: 0 auto;
 }
 
@@ -100,17 +100,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
-    line-height: 50px;
+    margin-top: 1rem;
+    line-height: 3.125rem;
     outline: none;
-    font-size: 18px;
-    letter-spacing: .025em;
+    font-size: 1.125rem;
+    letter-spacing: .025rem;
     text-decoration: none;
     cursor: pointer;
     font-weight: 800;
-    min-height: 50px;
+    min-height: 3.125rem;
     width: 100%;
-    border-radius: 99px;
+    border-radius: 10rem;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
@@ -122,20 +122,20 @@ body {
 /*? input wrapper */
 .input__wrapper {
     position: relative;
-    padding: 15px 0 0;
+    padding: 0.9375rem 0 0;
     margin-bottom: 0.5rem;
 }
 
 .input__field {
     font-size: 1.5rem;
     color: var(--text);
-    padding: 6px 0px;
-    padding-right: 32px;
-    padding-bottom: 8px;
+    padding: 0.375rem 0;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
     line-height: 2rem;
     height: 2rem;
-    outline: 0px;
-    border: 0px;
+    outline: 0;
+    border: 0;
     width: 100%;
     vertical-align: middle;
     padding-bottom: 0.7rem;
@@ -184,11 +184,11 @@ body {
 
 .input__icon {
     position: absolute;
-    right: -14px;
-    bottom: -11px;
-    width: 36px;
-    height: 36px;
-    padding: 2px;
+    right: -0.875rem;
+    bottom: -0.6875rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.125rem;
     transform: translate(-50%, -50%);
     transform-origin: center;
     cursor: pointer;
@@ -205,8 +205,8 @@ body {
     flex-direction: column;
     align-self: center;
     color: var(--secondary);
-    gap: 16px;
-    margin-top: 8px;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .my-form__actions a {
@@ -221,6 +221,6 @@ body {
 
 .my-form__row {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     justify-content: space-between;
 }

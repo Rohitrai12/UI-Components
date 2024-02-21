@@ -1,52 +1,113 @@
 
 :root {
-    --background: #3C343D;
+  --white: #FFF;
+  --background: #060D23;
+  --background-hover: #383D4F;
+  --primary-blue: #00E0FE;
+  --blue-gray: #f4fcff;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  height: 100%;
+  background-color: var(--blue-gray);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.background {
-    background-color: var(
-        --background
-    );
-    display: grid;
-    place-items: center;
-    height: 100vh;
+.faq-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 12rem;
+  max-width: 37.5rem;
+  padding: 2rem;
+  border-radius: 1em;
+  background-color: var(--background);
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 800px;
+details {
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  position: relative;
+  max-width: 37.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.card {
-    position: relative;
-    left: 0px;
-    width: 80px;
-    height: 360px;
-    overflow: hidden;
-    background-color: var(
-        --background
-    );
-    transition: 0.4s
-        ease-in-out;
-    flex: 0.25;
+details:hover {
+  background-color: var(--background-hover);
 }
 
-.card img {
-    height: 360px;
+details:hover svg {
+  stroke: var(--primary-blue);
 }
 
-.card:hover {
-    flex: 2;
-    font-weight: bold;
-    cursor: pointer;
+details[open] {
+  background-color: var(--background-hover);
 }
 
+details[open] .faq-title {
+  color: var(--primary-blue);
+}
 
+summary {
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  align-items: center;
+}
+
+summary svg {
+  stroke: var(--white);
+}
+
+details[open] summary svg {
+  stroke: var(--primary-blue);
+  transform: rotate(90deg);
+}
+
+summary:hover .faq-title {
+  color: var(--primary-blue);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:focus {
+  outline: none;
+}
+
+.faq-title {
+  color: var(--white);
+  width: 90%;
+  transition: all 250ms ease-in-out;
+}
+
+.faq-content {
+  color: var(--white);
+  padding: 0.2rem 1rem 1rem 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.expand-icon {
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  transition: all 150ms ease-out;
+}

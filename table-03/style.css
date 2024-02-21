@@ -11,19 +11,19 @@
 
 body {
     font-family: sans-serif;
-    margin: 0px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 16px;
-    background-color: var(--background);
+    padding: 1rem;
+    background: var(--background);
 }
 
 .table-widget {
-    border-radius: 16px;
-    background-color: var(--table-background);
-    padding: 24px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
     border: 2px solid var(--gray-background);
     box-shadow: 
      rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -34,8 +34,8 @@ body {
 
 .table-widget table {
     border-collapse: collapse;
-    min-height: 480px;
-    max-width: 960px;
+    min-height: 30rem;
+    max-width: 60rem;
     width: 100%;
 }
 
@@ -43,11 +43,11 @@ body {
     font-size: 1.12rem;
     font-weight: 700;
     text-align: left;
-    margin: 8px 0px;
+    margin: 0.5rem 0;
 }
 
 .table-widget th {
-    padding: 20px 16px;
+    padding: 1.25rem 1rem;
     font-size: 0.875rem;
     color: var(--gray);
 }
@@ -57,12 +57,12 @@ body {
 }
 
 .table-widget tfoot {
-    margin-top: 16px;
+    margin-top: 1rem;
     border-top: 2px solid var(--gray-background);
 }
 
 .table-widget td {
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
 }
 
 .table-widget tbody tr {
@@ -82,11 +82,11 @@ body {
     font-size: 0.8rem;
     font-weight: 700;
     background-color: var(--odd-row);
-    padding: 8px;
+    padding: 0.5rem;
     display: inline-flex;
     align-items: center;
-    margin-left: 16px;
-    border-radius: 8px;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
 }
 
 @keyframes fadeIn {
@@ -100,14 +100,14 @@ body {
 
 .team-member-profile {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .profile-info__name {
@@ -116,15 +116,15 @@ body {
 }
 
 .team-member-profile img {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .status {
-    border-radius: 8px;
-    padding: 8px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     font-weight: 700;
 }
 
@@ -148,13 +148,13 @@ body {
 
 .tags {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .tag {
-    padding: 8px;
+    padding: 0.5rem;
     background-color: var(--gray-mid);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-weight: 700;
 }
 
@@ -163,14 +163,14 @@ body {
 }
 
 .table-widget {
-    min-height: 80px;
+    min-height: 5rem;
 }
 
 .pagination {
     list-style-type: none;
     display: flex;
-    gap: 16px;
-    padding: 0px;
+    gap: 1rem;
+    padding: 0;
 }
 
 .pagination a {
@@ -179,8 +179,8 @@ body {
     font-size: 1.3rem;
     text-decoration: none;
     font-weight: 700;
-    padding: 12px 16px;
-    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .pagination a:hover, a.active{

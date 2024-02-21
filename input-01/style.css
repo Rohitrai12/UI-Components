@@ -1,16 +1,13 @@
-
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
-html {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-}
-
 :root {
   --primary: #007FFF;
   --secondary: #6F7E8C;
   --hover: #F5F5F5;
   --text: #212121;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 * {
@@ -21,13 +18,13 @@ html {
 
 .box {
   background-color: white;
-  padding: 24px;
-  padding-top: 12px;
-  border-radius: 16px;
+  padding: 1.5rem;
+  padding-top: 0.75rem;
+  border-radius: 1rem;
 }
 
 .box h2 {
-  margin: 0px;
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -44,17 +41,17 @@ html {
 
 .input__wrapper {
   position: relative;
-  padding: 15px 0 0;
+  padding: 1rem 0 0;
 }
 
 .input__field {
   border: 0;
   border-bottom: 2px solid var(--secondary);
   outline: 0;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text);
-  padding: 4px 0px;
-  padding-right: 32px;
+  padding: 0.25rem 0px;
+  padding-right: 2rem;
 
   background: transparent;
   transition: border-color 0.2s;
@@ -65,10 +62,10 @@ html {
 }
 
 .input__field:placeholder-shown ~ .input__label {
-  font-size: 16px;
+  font-size: 1rem;
   cursor: text;
   color: var(--secondary);
-  top: 20px;
+  top: 1.25rem;
 }
 
 label,
@@ -76,8 +73,8 @@ label,
   position: absolute;
   top: 0;
   display: block;
-  font-size: 14px;
-  left: -1px;
+  font-size: 0.875rem;
+  left: -0.0625rem;
   color: var(--secondary);
   transition: 0.3s;
 }
@@ -92,11 +89,11 @@ label,
 
 .input__icon {
   position: absolute;
-  right: -14px;
-  bottom: -11px;
-  width: 26px;
-  height: 26px;
-  padding: 2px;
+  right: -0.875rem;
+  bottom: -0.6875rem;
+  width: 1.625rem;
+  height: 1.625rem;
+  padding: 0.125rem;
   transform: translate(-50%,-50%);
   transform-origin: center;
   cursor: pointer;

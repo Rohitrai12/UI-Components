@@ -10,25 +10,26 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
-    padding: 24px;
+    padding: 1.5rem;
     font-family: Poppins, sans-serif;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .card {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 20px 20px 16px 16px;
+    border-radius: 1.25rem 1.25rem 1rem 1rem;
     background-color: white;
     cursor: pointer;
     overflow: hidden;
-    max-width: clamp(620px, 70vw, 820px);
-    min-width: 260px;
-    min-height: 280px;
+    max-width: clamp(38.75rem, 70vw, 51.25rem);
+    min-width: 15rem;
+    min-height: 16.5rem;
 }
 
 .card:hover {
@@ -36,7 +37,7 @@ body {
 }
 
 .background {
-    flex: 1 1 250px;
+    flex: 1 1 15rem;
 }
 
 .background img {
@@ -46,11 +47,11 @@ body {
 }
 
 .content {
-    flex: 3 1 350px;
+    flex: 3 1 22rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .content > h2 {
@@ -62,8 +63,8 @@ body {
 .content > p {
     font-size: clamp(1.1rem, 1.75vw, 1.35rem);
     font-weight: 400;
-    margin-bottom: 16px;
-    line-height: 22px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
 }
 
 .social-icons {

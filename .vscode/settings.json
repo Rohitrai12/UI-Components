@@ -3,6 +3,8 @@
         "authed",
         "datetime",
         "newcomment",
+        "signin",
+        "signup",
         "Storeify"
     ]
 }

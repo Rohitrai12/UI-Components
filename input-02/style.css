@@ -1,15 +1,16 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
-html {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
 
 :root {
   --primary: #007FFF;
   --secondary: #6F7E8C;
   --text: #212121;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 * {
@@ -20,15 +21,15 @@ html {
 
 .box {
   background-color: white;
-  padding: 24px;
+  padding: 1.5rem;
   max-width: fit-content;
   width: 100%;
-  padding-top: 12px;
-  border-radius: 16px;
+  padding-top: 0.75rem;
+  border-radius: 1rem;
 }
 
 .box h2 {
-  margin: 0px;
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -45,16 +46,16 @@ html {
 
 .input__wrapper {
   position: relative;
-  padding: 15px 0 0;
+  padding: 1rem 0 0;
 }
 
 .input__field {
   border: 1px solid var(--secondary);
   font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: var(--text);
-  padding: 8px;
-  padding-right: 32px;
+  padding: 0.5rem;
+  padding-right: 2rem;
   background: transparent;
   transition: border-color 0.2s;
 }
@@ -67,19 +68,19 @@ html {
   font-size: 1rem;
   cursor: text;
   color: var(--secondary);
-  top: 24px;
+  top: 1.5rem;
 }
 
 
 label,
 .input__field:focus ~ .input__label {
   position: absolute;
-  top: 6px;
-  padding: 0 4px;
+  top: 0.375rem;
+  padding: 0 0.25rem;
   background-color: white;
   display: block;
-  font-size: 14px;
-  left: 8px;
+  font-size: 0.875rem;
+  left: 0.5rem;
   color: var(--secondary);
   transition: 0.3s;
 }
@@ -95,10 +96,10 @@ label,
 
 .input__icon {
   position: absolute;
-  right: -10px;
-  bottom: -10px;
-  width: 28px;
-  height: 28px;
+  right: -0.625rem;
+  bottom: -0.625rem;
+  width: 1.75rem;
+  height: 1.75rem;
   transform: translate(-50%,-50%);
   transform-origin: center;
   cursor: pointer;
