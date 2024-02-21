@@ -16,6 +16,7 @@
 body {
     font-family: "Segoe UI", "Noto Sans", sans-serif;
     font-size: 16px;
+    user-select: none;
 }
 
 * {
@@ -53,6 +54,7 @@ body {
     align-items: center;
     font-weight: 700;
     border-radius: 0.5rem;
+    transition: all 0.45s ease-in-out;
     text-decoration: none;
 }
 
@@ -100,6 +102,7 @@ body {
     grid-auto-columns: max-content;
     width: 2rem;
     height: 2rem;
+    transition: all 0.45s ease-in-out;
     color: var(--github-dark-lighter);
     background: transparent;
     border: 1px solid var(--github-dark-border);
@@ -171,6 +174,7 @@ body {
     cursor: pointer;
     color: var(--color);
     padding: 0px 0.5rem;
+    transition: all 0.45s ease-in-out;
 }
 
 .navigation__menu__items > li:hover {
@@ -179,6 +183,7 @@ body {
 }
 
 .navigation__menu__items > li > svg {
+    min-width: 1rem;
     fill: var(--github);
 }
 
@@ -217,11 +222,13 @@ body {
 .avatar-name-alias {
     color: var(--github);
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .avatar-name {
     color: var(--color);
     font-size: 0.75rem;
+    white-space: nowrap;
 }
 
 .close-button {
@@ -233,6 +240,7 @@ body {
     cursor: pointer;
     height: 2rem;
     width: 2rem;
+    transition: all 0.45s ease-in-out;
 }
 
 .close-button:hover {
@@ -263,10 +271,9 @@ body {
 }
 
 .hide {
-    opacity: 0;
-    visibility: hidden;
-    animation: fadeOutAnimation 
+    animation: fadeOutAnimation ease-in-out 0.5s forwards;
 }
+
 
 @keyframes fadeOutAnimation {
     0% {
