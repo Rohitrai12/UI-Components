@@ -59,7 +59,7 @@ body {
 }
 
 .page__title:hover {
-    background-color: var(--background);
+    background: var(--background);
 }
 
 .notification-mark {
@@ -69,7 +69,7 @@ body {
     right: -0.2rem;
     border-radius: 50%;
     position: absolute;
-    background-color: var(--notification);
+    background: var(--notification);
 }
 
 @media (max-width: 400px) {
@@ -209,7 +209,8 @@ body {
     align-items: center;
 }
 
-.avatar-wrapper .avatar-profile {
+.avatar-wrapper 
+.avatar-profile {
     width: 2.5rem;
     height: 2.5rem;
 }
