@@ -123,7 +123,8 @@ body {
     background: var(--gray);
 }
 
-.navigation>li:hover .dropdown {
+.navigation>li:hover .dropdown, 
+.navigation>li:focus-within .dropdown {
     display: block;
 }
 
