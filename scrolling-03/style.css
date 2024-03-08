@@ -261,3 +261,14 @@ body {
 .circle--red {
     background: var(--error);
 }
+
+
+::-webkit-scrollbar{
+	/* background-color: white; */
+	height: 8px;
+	border: 2px solid #000000 ; /* Chrome,Safari,Opera */
+}
+::-webkit-scrollbar-thumb{
+	background-color:red;
+	border-radius: 50%;
+}
