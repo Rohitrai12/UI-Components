@@ -17,12 +17,12 @@ Just navigate to the folder with your chosen example and open html file in the b
 ```
 npm i 
 ```
-* Run development mode
+* Run build
 ```
-npm run dev
+npm run build
 ```
-
-Now the app is accessible at ```localhost:3000```
+ 
+Now you will be able to see the react components in `index.html`. 
 
 # My Social Media
 The examples are posted here:
