@@ -34,3 +34,5 @@ The examples are posted here:
 * [Linkedin](https://www.linkedin.com/in/david-mraz/)
 * [Threads](https://www.threads.net/@davidm_ai)
 
+* Learn more at [Atheros Learning](https://learning.atheros.ai)! HTML and CSS course is coming this month!
+
