@@ -21,7 +21,7 @@ npm i
 ```
 npm run build
 ```
-* Run the command from react-examples folder
+* Run the command from react-examples folder Open index.html in a browser.
 
 ```
 npm run dev
