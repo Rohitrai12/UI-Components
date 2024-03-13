@@ -1,5 +1,7 @@
 This is repository with examples of simple UI components. The repository is based on Next.js and React.js. 
 
+![screenshot](./docs/screenshot.png)
+
 # installation
 
 * Clone the repo with
