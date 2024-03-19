@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var(--background);
+    background: var(--background);
     display: grid;
     place-items: center;
     height: 100vh;
@@ -30,7 +30,7 @@ body {
     width: 3rem;
     height: 3rem;
     border: none;
-    background-color: transparent;
+    background: transparent;
     border-radius: 50%;
     outline: 2px solid white;
     cursor: pointer;
