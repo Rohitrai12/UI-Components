@@ -20,13 +20,13 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   display: flex;
-  background-color: var(--background);
+  background: var(--background);
   justify-content: center;
   align-items: center;
 }
 
 .box {
-  background-color: var(--box-background);
+  background: var(--box-background);
   padding: 1.5rem;
   padding-top: 0.75rem;
   border-radius: 1rem;

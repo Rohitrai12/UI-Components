@@ -147,7 +147,9 @@ body {
     width: 100%;
     vertical-align: middle;
     padding-bottom: 0.7rem;
-    border-bottom: 3px solid var(--secondary);
+    border-bottom: 3px solid var(
+        --secondary
+    );
     background: transparent;
     transition: border-color 0.2s;
 }
@@ -161,7 +163,8 @@ body {
     user-select: none;
 }
 
-.input__field:placeholder-shown~.input__label {
+.input__field:placeholder-shown
+~.input__label {
     cursor: text;
     color: var(--text);
     top: 0.8rem;

@@ -51,12 +51,15 @@ html {
   display: flex;
   color: var(--white);
   flex-direction: column;
-  background-color: var(--sidebar-background);
-  transition: max-width 0.1s ease-in-out;
+  background: var(
+    --sidebar-background
+  );
+  transition: max-width 0.1s 
+    ease-in-out;
 }
 
 body.collapsed .sidebar {
-  max-width: 80px;
+  max-width: 5rem;
   display: flex;
   align-items: center;
 }
@@ -73,7 +76,7 @@ body.collapsed .hide {
 }
 
 .search__wrapper input {
-  background-color: var(--background);
+  background: var(--background);
   height: 2.5rem;
   width: 100%;
   border-radius: 0.5rem;

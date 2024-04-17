@@ -1,6 +1,9 @@
+
+Learn more with me Modern Frontend Developer: HTML and CSS [https://learning.atheros.ai/course-detail/modern-frontend-developer-html-and-css]
+
 This is repository with examples of simple UI components. The repository is based on Next.js and React.js. 
 
-# installation
+# Installation
 
 * Clone the repo with
 ```
@@ -33,6 +36,4 @@ The examples are posted here:
 * [Twitter](https://twitter.com/davidm_ml)
 * [Linkedin](https://www.linkedin.com/in/david-mraz/)
 * [Threads](https://www.threads.net/@davidm_ai)
-
-* Learn more at [Atheros Learning](https://learning.atheros.ai)! HTML and CSS course is coming this month!
 

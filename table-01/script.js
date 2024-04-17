@@ -23,7 +23,6 @@ const teamMembers = [
         status: 'inactive',
         tags: ['design', 'marketing']
     },
-
     {
         src: 'assets/nate.jpg',
         name: 'Nate Conor',
@@ -55,13 +54,35 @@ const teamMembers = [
         alias: '@natalia',
         status: 'inactive',
         tags: ['dev', 'marketing']
+    },   
+    {
+        name: 'Ryan Stewart',
+        src: 'assets/ryan.jpg',
+        email: 'ryan@example.com',
+        status: 'inactive',
+        alias: '@ryan',
+        tags: ['dev', 'QA']
+    },
+    {
+        src: 'assets/eddie.jpg',
+        name: 'Edward Alexander',
+        email: 'edward@example.com',
+        alias: '@eddie',
+        status: 'active',
+        tags: ['dev', 'marketing']
+    },
+    {
+        src: 'assets/laura.jpg',
+        name: 'Laura Smith',
+        email: 'laura@example.com',
+        status: 'inactive', 
+        alias: '@laura',
+        tags: ['design', 'QA']
     },
 ];
 
-
 let tableRowCount = document.getElementsByClassName('table-row-count');
 tableRowCount[0].innerHTML = `(${teamMembers.length}) Members`;
-console.log(tableRowCount)
 
 let tableBody = document.getElementById('team-member-rows');
 
@@ -72,7 +93,10 @@ const numberOfPages = Math.ceil(teamMembers.length / itemsOnPage);
 const start = (new URLSearchParams(window.location.search)).get('page') || 1;
 
 const mappedRecords = teamMembers
-.filter((teamMember, i) => (((start - 1) * itemsOnPage) < i + 1) && (i+1 <= start * itemsOnPage))
+.filter((teamMember, i) => 
+    (((start - 1) * itemsOnPage) < i + 1) && 
+    (i+1 <= start * itemsOnPage)
+)
 .map(
   (teamMember) => {
     return `<tr>
@@ -110,8 +134,6 @@ const linkList = [];
 for (let i = 0; i < numberOfPages; i++) {
     const pageNumber = i + 1;
     
-    console.log(pageNumber, start)
-
     linkList.push(`<li><a href="?page=${pageNumber}" ${pageNumber == start ? 'class="active"' : ''} title="page ${pageNumber}">${pageNumber}</a></li>`);
 }
 
