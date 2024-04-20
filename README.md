@@ -3,7 +3,7 @@ Learn more with me Modern Frontend Developer: HTML and CSS [https://learning.ath
 
 This is repository with examples of simple UI components. The repository is based on Next.js and React.js. 
 
-# Installation
+# Installation :
 
 * Clone the repo with
 ```
