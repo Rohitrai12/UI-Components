@@ -29,3 +29,4 @@ const searchInput = document.querySelector(".search__wrapper input");
 searchInput.addEventListener("focus", (e) => {
   document.body.classList.remove("collapsed");
 });
+

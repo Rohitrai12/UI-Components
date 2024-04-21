@@ -1,6 +1,9 @@
+
+Learn more with me Modern Frontend Developer: HTML and CSS [https://learning.atheros.ai/course-detail/modern-frontend-developer-html-and-css]
+
 This is repository with examples of simple UI components. The repository is based on Next.js and React.js. 
 
-# installation
+# Installation
 
 * Clone the repo with
 ```

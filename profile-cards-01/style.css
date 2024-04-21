@@ -11,12 +11,13 @@
 }
 
 body {
-    background-color: var(--background);
+    background: var(--background);
     display: grid;
     height: 100vh;
     margin: 0;
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', 
+        sans-serif;
 }
 
 .container {
@@ -51,7 +52,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: var(--background);
+    background: var(--background);
     transition: .5s;
 }
 
@@ -146,7 +147,7 @@ body {
     left: 0;
     z-index: 4;
     width: 100%;
-    height: 7rem;
+    height: 6.5rem;
     padding: 0.75rem 0.875rem;
     z-index: 1;
     color: #333;
