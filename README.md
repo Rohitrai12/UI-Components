@@ -1,7 +1,7 @@
 
 # Modern Frontend Developer: HTML and CSS
 
-Learn more with me [Modern Frontend Developer: HTML and CSS] [https://learning.atheros.ai/course-detail/modern-frontend-developer-html-and-css]
+Learn more with me [Modern Frontend Developer: HTML and CSS](https://learning.atheros.ai/course-detail/modern-frontend-developer-html-and-css)
 
 * Modern Frontend Developer Ebook (almost 500 pages)
 * UI components collection
