@@ -1,4 +1,6 @@
 
+
+
 :root {
     --footer-background: #121a29;
     --text-color: #FAFBFC;
@@ -23,15 +25,14 @@ html {
 
 body {
     margin: 0;
-    background-color: #FAFBFC;
+    background: #FAFBFC;
 }
 
 /*? footer containers */
-
 footer {
     position: absolute;
     bottom: 0;
-    background-color: var(--footer-background);
+    background: var(--footer-background);
     min-width: 18rem;
     width: 100vw;
     bottom: 0;
@@ -47,7 +48,6 @@ footer {
     max-width: 80rem;
     padding: 1rem;
 }
-
 
 /*? top section */
 .footer-top {
@@ -77,7 +77,7 @@ footer {
     color: var(--text-color);
     outline: none;
     min-height: 2.25rem;
-    background-color: var(--footer-background);
+    background: var(--footer-background);
     font-size: 1.2rem;
     flex: 1 0 120px;
     padding: 0.5rem 0.75rem;
@@ -90,7 +90,7 @@ footer {
 
 .footer-subscribe > button {
     cursor: pointer;
-    background-color: var(--button-color);
+    background: var(--button-color);
     border-radius: 0.5rem;
     color: white;
     font-size: 1.25rem;
@@ -129,7 +129,7 @@ footer {
     text-decoration: none;
 }
 
-.footer-columns ul a:hover{
+.footer-columns ul a:hover {
     text-decoration: underline;
 }
 
@@ -171,7 +171,6 @@ footer {
 
 
 /*? Footer bottom */
-
 .footer-bottom {
     text-align: center;
     margin-top: 3rem;
@@ -203,11 +202,10 @@ footer {
     display: block;
     min-width: 2.5rem;
     height: 0.125rem;
-    background-color: var(--text-gray);
+    background: var(--text-gray);
 }
 
 /*? socials */
-
 .social-links {
     display: flex;
     gap: 0.5rem;

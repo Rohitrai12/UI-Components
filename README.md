@@ -4,12 +4,12 @@
 Learn more with me [Modern Frontend Developer: HTML and CSS](https://learning.atheros.ai/course-detail/modern-frontend-developer-html-and-css)
 
 * Modern Frontend Developer Ebook (almost 500 pages)
-* UI components collection
+* UI Components Collection
 * Frontend Resources
-* Quizzes and certificate!
-* Interactive tutorials (coming soon)
+* Quizzes And Certificate!
+* Interactive Tutorials (coming soon)
 * Coding Quizzes (coming soon)
-* Video course (coming soon)
+* Video Course (coming soon)
 
 This is repository with examples of simple UI components. The repository is based on Next.js and React.js. 
 
