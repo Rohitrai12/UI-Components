@@ -32,7 +32,6 @@ body {
     cursor: pointer;
     overflow: hidden;
     color: var(--text);
-    transition: all 0.3s;
     max-width: clamp(20rem, 70vw, 46.25rem);
     min-width: 20rem;
     min-height: 17.5rem;
