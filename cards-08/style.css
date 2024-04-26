@@ -1,0 +1,52 @@
+:root {
+    --bg: #1E1A28;
+    --card-bg: #120F14;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    height: 100vh;
+    padding: 6rem 2rem;
+    background: var(--background);
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 75rem;
+    gap: 1.5rem;
+}
+
+.profile-card {
+    max-width: 20rem;
+    max-height: 20rem;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    background: var(--card-bg);
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-preview {
+    max-width: 5rem;
+    max-height: 5rem;
+}
