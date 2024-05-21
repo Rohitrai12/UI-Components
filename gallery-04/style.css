@@ -50,7 +50,16 @@ body {
     transform: scale(1.15);
 }
 
+@keyframes cardFade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 .card:hover figcaption {
+    animation: cardFade 0.3s ease-in-out;
     font-size: 0.6rem;
     position: absolute;
     height: 5rem;
@@ -74,4 +83,3 @@ body {
     cursor: pointer;
     transform: translateX(1.3rem);
 }
-
