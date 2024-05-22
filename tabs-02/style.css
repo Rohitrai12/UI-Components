@@ -12,7 +12,8 @@
 }
 
 body {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', 
+        sans-serif;
     background: var(--gray);
     display: flex;
     justify-content: center;
@@ -27,8 +28,9 @@ body {
     width: 100%;
     min-height: 25rem;
 	border-radius: 1rem;
-    background-color: var(--background);
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;	
+    background: var(--background);
+	box-shadow: rgba(100, 100, 111, 0.2) 
+    0px 7px 29px 0px;	
 }
 
 .container-top-ten {
@@ -60,7 +62,8 @@ header {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     flex-wrap: nowrap;
-    border-bottom: 1px solid var(--tab-background);
+    border-bottom: 1px solid 
+    var(--tab-background);
 }
 
 .tabs > a {
@@ -87,11 +90,11 @@ header {
     outline: none;
     border-radius: 0.5rem;
     color: var(--primary-blue);
-    background-color: var(--tab-background);
+    background: var(--tab-background);
 }
 
 .tabs > a:hover {
-    background-color: var(--tab-background);
+    background: var(--tab-background);
     border-radius: 0.5rem;
 }
 
@@ -113,7 +116,8 @@ header {
     height: 4rem;
     opacity: 1;
     padding: 1rem 0px;
-    animation: fadein 0.3s ease-in-out;
+    animation: fadein 0.3s 
+    ease-in-out;
 }
 
 
@@ -128,7 +132,8 @@ header {
     flex-grow: 0;
     height: 4rem;
     width: 4rem;
-    border: 1px solid var(--tab-background);
+    border: 1px solid var(
+        --tab-background);
     object-fit: cover;
 }
 
