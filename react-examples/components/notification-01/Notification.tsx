@@ -1,6 +1,7 @@
+
+
 import React from 'react';
 import classNames from 'classnames';
-
 
 const Notification = ({ notification }) => {
     const d = new Date(notification.dateTime);
@@ -10,9 +11,12 @@ const Notification = ({ notification }) => {
             <img src={notification.user.avatar} alt={notification.title} />
             <div className={
                 classNames('notification__status', {
-                    'notification__status--online': notification.user.status === 'online',
-                    'notification__status--offline': notification.user.status === 'offline',
-                    'notification__status--pending': notification.user.status === 'pending'
+                    'notification__status--online': 
+                        notification.user.status === 'online',
+                    'notification__status--offline': 
+                        notification.user.status === 'offline',
+                    'notification__status--pending': 
+                        notification.user.status === 'pending'
                 })
             }></div>
         </div>

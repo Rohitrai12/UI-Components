@@ -156,7 +156,8 @@ const Notifications = () => {
                     gap: 1rem;
                     padding-bottom: 0.5rem;
                     overflow-x: auto;
-                    border-bottom: 1px solid #323335;
+                    border-bottom: 1px 
+                    solid #323335;
                 }
 
                 .notifications .tab {
