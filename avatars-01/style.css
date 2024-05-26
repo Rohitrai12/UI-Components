@@ -18,10 +18,6 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.avatars:hover {
-    gap: 1.25rem;
-}
-
 .avatars img {
     width: 8rem;
     height: 8rem;
