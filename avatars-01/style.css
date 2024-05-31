@@ -14,7 +14,9 @@ body {
 }
 
 .avatars {
-    display: flex;
+    display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(4rem);
     transition: all 0.2s ease-in-out;
 }
 
@@ -30,8 +32,8 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.avatars img:not(:first-child) {
-    margin-left: -2rem;
+.avatars:hover {
+    grid-template-columns: repeat(8rem);
 }
 
 .avatars img:hover {
