@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vercel like header example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="menu__wrapper">
+        <div class="menu__bar">
+            <a href="#" title="Home" aria-label="home" class="logo">
+                <!-- svg logo -->
+            </a>
+            <nav>
+                <ul class="navigation hide">
+                    <li>
+                        <button>
+                            Features
+                            <!-- svg features -->
+                        </button>
+                        <div class="dropdown__wrapper">
+                            <div class="dropdown">
+                                <ul class="list-items-with-description">
+                                    <li>
+                                        <!-- svg -->
+                                        <div class="item-title">
+                                            <h3>Previews</h3>
+                                            <p>Zero config, more innovation</p>
+                                        </div>
+                                    </li>
+                                   <!-- more li items -->
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- more items -->
+                </ul>
+            </nav>
+        </div>
+        <div class="action-buttons hide">
+            <a href="#log-in" title="Log in" class="secondary">
+                Log In
+            </a>
+            <a href="#sign-up" title="Sign up" class="primary">
+                Sign up
+            </a>
+        </div>
+        <button aria-label="Open menu" class="burger-menu" type="button">
+            <!-- open menu -->
+        </button>
+    </header>
+</body>
+
+</html>

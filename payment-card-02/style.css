@@ -44,8 +44,6 @@ body {
     margin: 0 auto;
 }
 
-
-
 .card:hover .card__inner {
     transform: rotateY(180deg);
 }
@@ -64,7 +62,11 @@ body {
     background:
         url(assets/bg-card.jpg);
     background-size: cover;
+    border-radius: 16px 32px 48px 96px;
 }
+
+
+
 
 .card__front {
     display: flex;
