@@ -249,7 +249,9 @@ body {
 }
 
 .primary:hover {
-    background: var(--primary-bg-hover);
+    background: var(
+        --primary-bg-hover
+    );
 }
 
 .burger-menu {
@@ -286,3 +288,4 @@ body {
         width: 1.25rem;
     }
 }
+
