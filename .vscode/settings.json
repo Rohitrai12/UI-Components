@@ -4,10 +4,13 @@
         "authed",
         "Crestwood",
         "datetime",
+        "lerp",
         "newcomment",
+        "rotatey",
         "signin",
         "signup",
         "Storeify",
-        "translatex"
+        "translatex",
+        "translatez"
     ]
 }
