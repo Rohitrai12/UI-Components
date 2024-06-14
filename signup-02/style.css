@@ -15,7 +15,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Mulish, sans-serif;
+    font-family: Mulish, 
+        sans-serif;
 }
 
 .socials-row {
@@ -42,7 +43,8 @@ body {
     font-size: 1.1rem;
     color: var(--text);
     padding: 0.5rem;
-    border: 1px solid var(--primary-light);
+    border: 1px solid var(
+        --primary-light);
     font-weight: 700;
 }
 
@@ -61,7 +63,7 @@ body {
 .divider-line {
     width: 100%;
     height: 1px;
-    background-color: var(--secondary);
+    background: var(--secondary);
     opacity: .2;
 }
 
@@ -90,7 +92,7 @@ body {
     justify-content: start;
     align-items: center;
     flex-grow: 1;
-    background-color: var(--background);
+    background: var(--background);
 }
 
 .info-side h2 {
@@ -130,7 +132,8 @@ body {
     padding: 3rem 2rem;
     height: fit-content;
     box-shadow:
-        rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        rgba(100, 100, 111, 0.2) 
+        0px 7px 29px 0px;
 }
 
 .form-welcome {
@@ -148,7 +151,7 @@ body {
 }
 
 .my-form__button {
-    background-color: var(--primary);
+    background: var(--primary);
     color: white;
     white-space: nowrap;
     border: none;

@@ -10,8 +10,8 @@
     box-sizing: border-box;  
 }
 
-.background {
-    background-color: var(--background);
+body {
+    background: var(--background);
     display: grid;
     place-items: center;
     height: 100vh;
@@ -27,7 +27,7 @@
     left: 0;
     width: 7.5rem;
     height: 10rem;
-    background-color: var(--background-card);
+    background: var(--background-card);
     border-radius: 0.5rem;
     transition: 1s ease-in-out;
     overflow: hidden;
@@ -45,7 +45,7 @@
 }
 
 .card:hover ~ .card {
-    left: 3.5rem;
+    left: 2rem;
 }
 
 .card img {

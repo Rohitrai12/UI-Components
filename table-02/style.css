@@ -17,7 +17,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 1rem;
-    background-color: var(
+    background: var(
         --background
     );
 }

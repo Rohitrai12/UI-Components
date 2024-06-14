@@ -1,3 +1,5 @@
+
+
 :root {
     --primary: #323AC0;
     --text: #252728;
@@ -17,7 +19,7 @@
 
 body {
     font-family: 'Mulish', sans-serif;
-    background-color: var(--background);
+    background: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,15 +37,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 
+        0px 3px 6px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    background-color: var(--white);
+    background: var(--white);
     border: none;
 }
 
 .share-btn:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 
+        0px 6px 12px;
 }
 
 .share-btn svg {
@@ -51,7 +55,7 @@ body {
 }
 
 .close-btn {
-    background-color: inherit;
+    background: inherit;
     cursor: pointer;
     border: none;
 }
@@ -64,13 +68,14 @@ body {
 
 .copy-link-dialog {
     border-radius: 0.75rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 
+        0px 8px 24px;
     max-width: 36rem;
     margin: 0 auto;
     width: 100%;
     margin-top: 4rem;
     border: none;
-    background-color: var(--white);
+    background: var(--white);
 }
 
 .copy-link-dialog header {
@@ -79,14 +84,14 @@ body {
     padding: 1.5rem 2rem 0.75rem 2rem;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--gray-light);
+    border-bottom: 1px solid 
+        var(--gray-light);
 }
 
 .copy-link-dialog header h2 {
     font-size: 1.5rem;
     color: var(--headline);
 }
-
 
 .copy-link-dialog__content {
     padding: 2rem;
@@ -99,7 +104,7 @@ body {
     font-weight: 700;
     color: var(--text);
     justify-content: space-between;
-    background-color: var(--gray-light);
+    background: var(--gray-light);
     padding: 0.25rem;
     padding-left: 1.5rem;
 }
@@ -110,12 +115,12 @@ body {
     border: none;
     width: 100%;
     font-weight: 800;
-    background-color: inherit;
+    background: inherit;
     font-size: 1.2rem;
 }
 
 .copy-link-wrapper input::selection {
-    background-color: var(--primary);
+    background: var(--primary);
     color: var(--white);
 }
 
@@ -136,7 +141,9 @@ body {
     gap: 0.5rem;
     font-size: 1.1rem;
     align-items: center;
-    background-color: var(--white);
+    background: var(--white);
     border: none;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 
+        0px 3px 6px;
 }
+

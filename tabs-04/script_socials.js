@@ -52,58 +52,14 @@ const filter = {
 
 const generateTabItems = (elem, tabContent) => {
   const filterName = elem.name;
-
   const filterFunction = filter[filterName];
-
-  const mappedRecords = tabRecords.filter(filterFunction).map(({ company, ...record }) => {
-    return DOMPurify.sanitize(
+  const mappedRecords = tabRecords.filter(filterFunction).map(
+    ({ company, ...record }) => DOMPurify.sanitize(
       `<div class="job">
-        <div class="job__main">
-          <div class="job__company">
-            <img
-              src="${company.src}"
-              class="job__avatar job__avatar--${company.name}"
-              alt="Profile"
-            >
-          </div>
-          <div class="job__description">
-            <div class="job__name">
-              <div class="job__role">
-                ${record.role} (${record.type})
-              </div>
-              <button type="button" class="job__bookmark">
-              // svg
-              </button>
-            </div>
-            <div class="job__company">
-                ${company.name}
-              </div>
-            <div class="job__location">
-              <img src="assets/location.svg" alt="Location">
-              ${record.location}
-            </div>
-          </div>
-        </div>
-        <div class="job__bottom">
-          <div class="job__applicants">
-            ${record.applicants.map((applicant) => {
-              return (
-                `<img 
-                  src="assets/users/${applicant}.jpg" 
-                  alt="${applicant.name}" class="job__applicant"
-                >`
-              )
-            }).join("")}
-            +${record.applicationsCount} applicants
-          </div>
-          <div class="job__salary">
-            ${record.salary}
-          </div>
-        </div>
+        // html markup for job listing
       </div>`
-    );
-  });
-
+    )
+  );
   tabContent.innerHTML = mappedRecords.join("");
 };
 
@@ -126,3 +82,4 @@ activeLink.classList.toggle("active");
 activeTab.classList.toggle("tab-content--active");
 
 generateTabItems(activeLink, activeTab);
+

@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--background);
+    background: var(--background);
     display: grid;
     place-items: center;
     height: 100vh;
@@ -29,7 +29,7 @@ body {
     border-radius: 1.2rem;
     height: 20rem;
     overflow: hidden;
-    background-color: var(--background);
+    background: var(--background);
     transition: 0.4s ease-in-out;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
     flex: 0.25;
@@ -39,7 +39,6 @@ body {
     position: relative;
     height: 20rem;
     object-fit: cover;
-   
 }
 
 .card:hover {
